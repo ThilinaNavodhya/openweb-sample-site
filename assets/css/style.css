@@ -2835,22 +2835,22 @@ a.new-item-hadder-text:hover {
 	 left: 50%;
 	 -ms-transform: translate(-50%, -50%);
 	 transform: translate(-50%, -50%);
-	 width: 691px;
+	 width: 540px;
 }
  @media (max-width: 1024px) {
 	 .News-and-Events-image-mq .News-and-Events-image {
 		 margin: 0;
 		 position: absolute;
-		 top: 40%;
+		 top: 50%;
 		 left: 58%;
 		 -ms-transform: translate(-50%, -50%);
 		 transform: translate(-50%, -50%);
-		 width: 730px;
+		 width: 450px;
 	}
 	 .News-and-Events-image-mq .News-and-Events-banner {
 		 margin: 0;
 		 position: absolute;
-		 top: 33%;
+		 top: 50%;
 		 left: 26%;
 		 -ms-transform: translate(-50%, -50%);
 		 transform: translate(-33%, -50%);
@@ -2861,16 +2861,16 @@ a.new-item-hadder-text:hover {
 	 .News-and-Events-image-mq .News-and-Events-image {
 		 margin: 0;
 		 position: absolute;
-		 top: 35%;
+		 top: 40%;
 		 left: 56%;
 		 -ms-transform: translate(-50%, -50%);
 		 transform: translate(-50%, -50%);
-		 width: 71%;
+		 width: 46%;
 	}
 	 .News-and-Events-image-mq .News-and-Events-banner {
 		 margin: 0;
 		 position: absolute;
-		 top: 31%;
+		 top: 40%;
 		 left: 30%;
 		 -ms-transform: translate(-50%, -50%);
 		 transform: translate(-33%, -50%);
@@ -2915,7 +2915,7 @@ a.new-item-hadder-text:hover {
 	 max-width: 569px;
 }
  .News-and-Events-banner-date-dot {
-	 color: #d90a2c;
+	 color: #ffee007a;
 	 font-size: 5px;
 }
  .News-and-Events-animation-text {
@@ -3019,7 +3019,7 @@ a.new-item-hadder-text:hover {
 /*News and Events card ========================================================================== */
 /*WORK INQUIRIES ========================================================================== */
  .myImage {
-	 background-image: url('/assets/images/News-and-Events/Section1.png');
+	 background-image: url('/assets/images/News-and-Events/06268b10ac8a5e6fb2d587c783f8e096.jpg');
 	 background-attachment: local;
 	 background-position: center;
 	 background-repeat: no-repeat;
@@ -3027,7 +3027,7 @@ a.new-item-hadder-text:hover {
 }
  @media (max-width: 425px) {
 	 .myImage {
-		 background-image: url('/assets/images/News-and-Events/Section1.png');
+		 background-image: url('/assets/images/News-and-Events06268b10ac8a5e6fb2d587c783f8e096.jpg');
 		 background-repeat: no-repeat;
 		 background-size: cover;
 	}
