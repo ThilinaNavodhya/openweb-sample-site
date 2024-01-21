@@ -29,41 +29,19 @@
 
 <body>
 
-    <!---------------- navbar start ---------------->
+    <!------------------- navbar --------------->
     <div class="div-nav">
 
-        <!----------- navbar transparent  ----------->
-        <nav class="navbar fixed-top navcolor py-3" id="original-navbar">
+        <!----------------main navbar start----------->
+        <nav class="navbar fixed-top  py-3" id="navbar1">
             <div class="container-fluid">
                 <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#NavbarOffcanvas"
-                    aria-controls="NavbarOffcanvas">
-                    <span class="visually-hidden">Toggle navigation</span>
-                    <img src="assets/images/Navbar/Group2.svg" alt="">
-                </a>
-                <a class="navbar-brand d-flex align-items-center justify-content-center" href="/index.html">
-                    <span class="d-flex justify-content-center"><img src="assets/images/Navbar/nb_blk.svg"
-                            class="img-fluid navbar-logo" alt=""></span>
-                </a>
-                <div class="d-flex">
-                    <a href="/login.html"><img src="assets/images/Navbar/user.svg" class="img-fluid me-3" alt=""></a>
-                    <a href=""><img src="assets/images/Navbar/cart.svg" class="img-fluid" alt=""></a>
-                </div>
-                <div id="navcol-4" class="collapse navbar-collapse flex-grow-0 mt-2">
-                </div>
-            </div>
-        </nav>
-        <!----------- navbar transparent end----------->
-
-        <!----------- navbar white----------->
-        <nav class="navbar fixed-top navcolor py-3" id="scrolled-navbar">
-            <div class="container-fluid">
-                <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#NavbarOffcanvas"
-                    aria-controls="NavbarOffcanvas">
+                    aria-controls="offcanvasExamplenavbar">
                     <span class="visually-hidden">Toggle navigation</span>
                     <img src="assets/images/Navbar/Group1.svg" alt="">
                 </a>
                 <a class="navbar-brand d-flex align-items-center justify-content-center" href="/index.html">
-                    <span class="d-flex justify-content-center text-black"><img src="assets/images/Navbar/nb_blk-dark.svg"
+                    <span class="d-flex justify-content-center text-black"><img src="assets/images/Navbar/openweb-logo-3740A4FC5E-seeklogo.com.png"
                             class="img-fluid navbar-logo text-black" alt=""></span>
                 </a>
                 <div class="d-flex">
@@ -71,52 +49,68 @@
                     <a href=""><img src="assets/images/Navbar/cart-dark.svg" class="img-fluid" alt=""></a>
                 </div>
                 <div id="navcol-4" class="collapse navbar-collapse flex-grow-0 mt-2">
+
                 </div>
             </div>
         </nav>
-        <!----------- navbar white end----------->
-
-        <!----------- navbar offcanvas----------->
+        <!----------------main navbar end----------->
+        
+        <!------------------- navbar offcanvas start--------------->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="NavbarOffcanvas"
             aria-labelledby="offcanvasExampleLabelnavbar">
             <div class="offcanvas-header d-flex justify-content-end d-block d-sm-none">
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
             </div>
-            <div class="d-flex flex-column justify-content-between" style="height: 100vh;">
-                <div class="">
-                    <div class="mt-5 pt-4 d-flex justify-content-center">
-                        <img src="assets/images/Navbar/nb-gold copy.svg" class="img-fluid" alt="" style="width: 165px;">
+            <div id="navbarOffcanvaspage1">
+            <div  class="d-flex flex-column justify-content-between overflow-y-scroll Select-fabric-scrollbar" style="height: 90vh;">
+                <div>
+                    <div class="mt-4 mb-4 d-flex justify-content-center">
+
+                        <img src="assets/images/Navbar/openweb-logo-3740A4FC5E-seeklogo.com.png" class="img-fluid" alt="" style="width: 165px;">
                     </div>
-                    <div class="my-5 py-3 ms-5">
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">New
-                            Arrivals</a>
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Clothing</a>
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shoes</a>
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Accessories</a>
+                    <div>
+                    <div class="my-3 py-3 ms-5">
+                        <a href="/new-arrivals.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">New Arrivals</a>
+                        <a href="/gift-voucher.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Gift Vucher</a>
+                            <a href="/ticket-booking.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Ticket Booking</a>
                     </div>
                     <div class="ms-5">
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Made to
-                            Order</a>
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Looks
+                        <a href="/product-configurator-suit.html"
+                                class="list-group-item list-group-item-action navbar-offcanvas mb-2">Bestsellers</a>
+                            <a href="/product-configurator.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Product Configurator</a>
+                            <a href="/new-arrivals.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shirts</a>
+                            <a href="/product-configurator-waist-coat.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shoes</a>
+            
+                            <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Looks
                             Designer</a>
                     </div>
-                    <div class="ms-5 mt-5 pt-3">
+                    <div class="ms-5 mt-3 pt-3">
                         <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Book your
                             Appointment</a>
                     </div>
                 </div>
+                </div>
                 <div>
                     <div class="ms-5">
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">About</a>
+                        <a href="/contact-us.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Contact Us</a>
+                        <a href="/about-us.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">About</a>
                     </div>
-                </div>
+                
+            </div>
             </div>
         </div>
-        <!----------- navbar offcanvas end----------->
+            
+        </div>
+        <!------------------- navbar offcanvas end--------------->
 
     </div>
-    <!---------------- navbar end ------------------>
+    <!------------------- navbar end------------>
 
 
     <!-- Glamour in the Spotlight start-->
@@ -166,7 +160,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <img src="assets/images/ticket-booking/Rectangle-332.png" class="img-fluid w-100" alt="">
+                    <img src="assets/images/ticket-booking/Concert-Hall-206144c00e.jpg" class="img-fluid w-100" alt="">
                 </div>
             </div>
         </div>
@@ -182,26 +176,14 @@
                 <div class="col-xl-11 col-md-12 mx-auto">
                     <div class="row gy-4 gx-4 row-cols-md-4 row-cols-2">
                         <div class="col">
-                            <div class="card p-xl-3 Ticket-Bookingpaty-card-diamond-plus h-100" onclick="toggleSelection(this, 1)">
+                            <div class="card p-xl-3 Ticket-Bookingpaty-card-gold h-100" onclick="toggleSelection(this, 4)">
                                 <div class="card-body">
-                                    <h5 class="ticket-booking-bigcard-tital">Diamond Plus</h5>
+                                    <h5 class="ticket-booking-bigcard-tital">Gold</h5>
                                     <p class="ticket-booking-bigcard-subtital">Available <span
                                             class="badge bg-white text-black ticket-booking-bigcard-subtital">24</span>
                                     </p>
                                     <a class="btn btn-dark w-100 mt-xl-5 mt-md-4 d-flex align-items-center justify-content-center Ticket-Bookinggigcard-btn"
-                                   >Select</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card p-xl-3 Ticket-Bookingpaty-card-diamond h-100" onclick="toggleSelection(this, 2)">
-                                <div class="card-body">
-                                    <h5 class="ticket-booking-bigcard-tital">Diamond</h5>
-                                    <p class="ticket-booking-bigcard-subtital">Available <span
-                                            class="badge bg-white text-black ticket-booking-bigcard-subtital">24</span>
-                                    </p>
-                                    <a class="btn btn-dark w-100 mt-xl-5 mt-md-4 d-flex align-items-center justify-content-center Ticket-Bookinggigcard-btn"
-                                      >Select</a>
+                                        onclick="showPart(4)">Select</a>
                                 </div>
                             </div>
                         </div>
@@ -218,17 +200,29 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card p-xl-3 Ticket-Bookingpaty-card-gold h-100" onclick="toggleSelection(this, 4)">
+                            <div class="card p-xl-3 Ticket-Bookingpaty-card-diamond h-100" onclick="toggleSelection(this, 2)">
                                 <div class="card-body">
-                                    <h5 class="ticket-booking-bigcard-tital">Gold</h5>
+                                    <h5 class="ticket-booking-bigcard-tital">Diamond</h5>
                                     <p class="ticket-booking-bigcard-subtital">Available <span
                                             class="badge bg-white text-black ticket-booking-bigcard-subtital">24</span>
                                     </p>
                                     <a class="btn btn-dark w-100 mt-xl-5 mt-md-4 d-flex align-items-center justify-content-center Ticket-Bookinggigcard-btn"
-                                        onclick="showPart(4)">Select</a>
+                                      >Select</a>
                                 </div>
                             </div>
                         </div>
+                        <div class="col">
+                            <div class="card p-xl-3 Ticket-Bookingpaty-card-diamond-plus h-100" onclick="toggleSelection(this, 1)">
+                                <div class="card-body">
+                                    <h5 class="ticket-booking-bigcard-tital">Diamond Plus</h5>
+                                    <p class="ticket-booking-bigcard-subtital">Available <span
+                                            class="badge bg-white text-black ticket-booking-bigcard-subtital">24</span>
+                                    </p>
+                                    <a class="btn btn-dark w-100 mt-xl-5 mt-md-4 d-flex align-items-center justify-content-center Ticket-Bookinggigcard-btn"
+                                   >Select</a>
+                                </div>
+                            </div>
+                        </div>               
                     </div>
                 </div>
             </div>
@@ -259,9 +253,12 @@
                     <div class="card Ticket-Bookingpaty-card-diamond-plus h-100">
                         <div class="card-body">
                             <h5 class="ticket-booking-smallcard-tital">Diamond Plus 02</h5>
-                            <a href="#" style="margin-top: 59px;"
-                                class="btn btn-dark Ticket-Booking-sold-out-btn w-100 d-flex align-items-center justify-content-center">SOLD
-                                OUT</a>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital1">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#diamondplus">Book
+                                Now</a>
                         </div>
                     </div>
                 </div>
@@ -350,9 +347,12 @@
                     <div class="card Ticket-Bookingpaty-card-diamond h-100">
                         <div class="card-body">
                             <h5 class="ticket-booking-smallcard-tital">Diamond 02</h5>
-                            <a href="#" style="margin-top: 59px;"
-                                class="btn btn-dark Ticket-Booking-sold-out-btn w-100 d-flex align-items-center justify-content-center">SOLD
-                                OUT</a>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#diamond">Book
+                                Now</a>
                         </div>
                     </div>
                 </div>
@@ -441,10 +441,12 @@
                     <div class="card Ticket-Bookingpaty-card-platinum h-100">
                         <div class="card-body">
                             <h5 class="ticket-booking-smallcard-tital">Platinum 02</h5>
-                            <a href="#" style="margin-top: 59px;"
-                                class="btn btn-dark Ticket-Booking-sold-out-btn w-100 d-flex align-items-center justify-content-center">SOLD
-                                OUT</a>
-
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#platinum">Book
+                                Now</a>
                         </div>
                     </div>
                 </div>
@@ -533,10 +535,12 @@
                     <div class="card Ticket-Bookingpaty-card-gold h-100">
                         <div class="card-body">
                             <h5 class="ticket-booking-smallcard-tital">Gold 02</h5>
-
-                            <a href="#" style="margin-top: 59px;"
-                                class="btn btn-dark Ticket-Booking-sold-out-btn w-100 d-flex align-items-center justify-content-center">SOLD
-                                OUT</a>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#gold">Book
+                                Now</a>
                         </div>
                     </div>
                 </div>
@@ -924,7 +928,7 @@
     <div class="div-footer">
 
         <!-- footer desktop start-->
-        <footer class="text-white bg-black d-none d-xl-block" id="footer">
+        <footer class="text-white footer-background-color d-none d-xl-block" id="footer">
             <div class="container-fluid px-md-5 px-3 pt-5 pb-3">
                 <div class="row justify-content-center mt-4">
                     <div
@@ -932,9 +936,9 @@
                         <p class="mb-0 footer-header">Contact </p>
                         <ul class="list-unstyled">
 
-                            <li class="mt-2"><a class="link footer-list" href="#">WhatsApp: +94 655 110 516</a></li>
-                            <li class="mt-2"><a class="link footer-list" href="#">Call: +94443289234</a></li>
-                            <li class="mt-2"><a class="link footer-list" href="#">Email: service@nb.lk</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">WhatsApp: +600 655 117 516</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Call: +600 93 446 28 9234</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Email: service@sttl.lk</a></li>
                         </ul>
                     </div>
                     <div class=" col-md-2 text-center text-lg-start d-flex flex-column item">
@@ -982,23 +986,12 @@
                 <hr />
                 <div class="">
                     <div class="row align-items-center">
-                        <div class="col-md-4">
-                            <h6 class="mb-0 copyright-text">Namal Balachandra - Sri Lanka (LK) | All Rights Reserved.</h6>
+                        <div class="col-md-6">
+                            <h6 class="mb-0 copyright-text">OpenWeb - Sri Lanka (LK) | All Rights Reserved.
+                            </h6>
                         </div>
-                        <div class="col-md-2 d-flex align-items-center">
-                            <a href=""><img src="assets/images/footer/FB_icon-icons.svg" class="img-fluid px-2" alt=""></a>
-                            <a href=""><img src="assets/images/footer/TWITTER_icon-icons.svg" class="img-fluid px-2" alt=""></a>
-                            <a href=""><img src="assets/images/footer/instagram_filled_icon.svg" class="img-fluid px-2"
-                                    alt=""></a>
-                            <a href=""><img src="/images/footer/YOUTUBE_icon-icons.svg" class="img-fluid px-2" alt=""></a>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-center">
-                            <a class="me-4 copyright-text" href="">Secure payments</a>
-                            <a href=""><img src="assets/images/footer/Page-1.svg" class="img-fluid me-3" alt=""></a>
-                            <a href=""><img src="assets/images/footer/Page-1(1).svg" class="img-fluid me-3" alt=""></a>
-                            <a href=""><img src="assets/images/footer/Page-1(2).svg" class="img-fluid me-3" alt=""></a>
-                        </div>
-                        <div class="col-md-2 d-flex align-items-center justify-content-end">
+                        
+                        <div class="col-md-6 d-flex align-items-center justify-content-end">
                             <a class="me-4 copyright-text" href="">Terms & Conditions</a>
                         </div>
                     </div>
@@ -1007,17 +1000,17 @@
         </footer>
         <!-- footer desktop end-->
         <!-- footer mobile  start-->
-        <footer class="text-white bg-black d-block d-xl-none" id="footer">
+        <footer class="text-white footer-background-color d-block d-xl-none" id="footer">
             <div class="container-fluid px-md-5 px-3 pb-3">
                 <div class="row justify-content-center pt-4">
                     <div
                         class="col-md-6 col-12 text-center  text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start  item social">
-                        <div class="accordion accordion-flush bg-black w-100" id="accordionFlushExample">
-                            <div class="accordion-item bg-black border-0">
+                        <div class="accordion accordion-flush footer-background-color w-100" id="accordionFlushExample">
+                            <div class="accordion-item footer-background-color border-0">
                                 <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button border-0 collapsed bg-black text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                        aria-controls="flush-collapseOne">
+                                    <button class="accordion-button border-0 collapsed footer-background-color text-white"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
                                         Contact Us
                                     </button>
                                 </h2>
@@ -1025,19 +1018,19 @@
                                     aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body py-0">
                                         <ul class="list-unstyled text-start">
-                                            <li class="mt-2"><a class=" footer-list" href="#">WhatsApp: +94 655 110 516</a>
-                                            </li>
-                                            <li class="mt-2"><a class="footer-list" href="#">Call: +94443289234</a></li>
-                                            <li class="mt-2"><a class="footer-list" href="#">Mail: service@nb.lk</a></li>
+                                            <li class="mt-2"><a class="link footer-list" href="#">WhatsApp: +600 655 117 516</a></li>
+                                            <li class="mt-2"><a class="link footer-list" href="#">Call: +600 93 446 28 9234</a></li>
+                                            <li class="mt-2"><a class="link footer-list" href="#">Email: service@sttl.lk</a></li>
+                                        
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item bg-black border-0">
+                            <div class="accordion-item footer-background-color border-0">
                                 <h2 class="accordion-header border-0" id="flush-heading2">
-                                    <button class="accordion-button border-0 collapsed bg-black text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false"
-                                        aria-controls="flush-collapse2">
+                                    <button class="accordion-button border-0 collapsed footer-background-color text-white"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2"
+                                        aria-expanded="false" aria-controls="flush-collapse2">
                                         Services
                                     </button>
                                 </h2>
@@ -1055,11 +1048,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item bg-black border-0">
+                            <div class="accordion-item footer-background-color border-0">
                                 <h2 class="accordion-header border-0" id="flush-heading3">
-                                    <button class="accordion-button collapsed bg-black text-white border-0" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false"
-                                        aria-controls="flush-collapse3">
+                                    <button class="accordion-button collapsed footer-background-color text-white border-0"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3"
+                                        aria-expanded="false" aria-controls="flush-collapse3">
                                         Support
                                     </button>
                                 </h2>
@@ -1067,8 +1060,10 @@
                                     aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body border-0 py-0">
                                         <ul class="list-unstyled text-start">
-                                            <li class="mt-2"><a class="footer-list" href="#">Shipping & Delivery</a></li>
-                                            <li class="mt-2"><a class="footer-list" href="#">Returns & Exchanges</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Shipping & Delivery</a>
+                                            </li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Returns & Exchanges</a>
+                                            </li>
                                             <li class="mt-2"><a class="footer-list" href="#">Perfect Fit Guides</a></li>
                                             <li class="mt-2"><a class="footer-list" href="#">FAQ</a></li>
                                             <li class="mt-2"><a class="footer-list" href="#">Accessibility</a></li>
@@ -1079,12 +1074,12 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-12 text-center text-lg-start d-flex flex-column item">
-                        <div class="accordion accordion-flush bg-black w-100" id="accordionFlushExample2">
-                            <div class="accordion-item bg-black border-0">
+                        <div class="accordion accordion-flush footer-background-color w-100" id="accordionFlushExample2">
+                            <div class="accordion-item footer-background-color border-0">
                                 <h2 class="accordion-header border-0" id="flush-heading4">
-                                    <button class="accordion-button border-0 collapsed bg-black text-white" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false"
-                                        aria-controls="flush-collapse4">
+                                    <button class="accordion-button border-0 collapsed footer-background-color text-white"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4"
+                                        aria-expanded="false" aria-controls="flush-collapse4">
                                         Services
                                     </button>
                                 </h2>
@@ -1102,11 +1097,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item bg-black border-0">
+                            <div class="accordion-item footer-background-color border-0">
                                 <h2 class="accordion-header border-0" id="flush-heading5">
-                                    <button class="accordion-button collapsed bg-black text-white border-0" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false"
-                                        aria-controls="flush-collapse5">
+                                    <button class="accordion-button collapsed footer-background-color text-white border-0"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5"
+                                        aria-expanded="false" aria-controls="flush-collapse5">
                                         Support
                                     </button>
                                 </h2>
@@ -1114,8 +1109,10 @@
                                     aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample2">
                                     <div class="accordion-body border-0 py-0">
                                         <ul class="list-unstyled text-start">
-                                            <li class="mt-2"><a class="footer-list" href="#">Shipping & Delivery</a></li>
-                                            <li class="mt-2"><a class="footer-list" href="#">Returns & Exchanges</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Shipping & Delivery</a>
+                                            </li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Returns & Exchanges</a>
+                                            </li>
                                             <li class="mt-2"><a class="footer-list" href="#">Perfect Fit Guides</a></li>
                                             <li class="mt-2"><a class="footer-list" href="#">FAQ</a></li>
                                             <li class="mt-2"><a class="footer-list" href="#">Accessibility</a></li>
@@ -1126,37 +1123,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="row ms-2 pb-3 mt-mb-0 mt-4">
-                    <div class="col-md-12 mt-2">
-                        <a class="copyright-text" href="">Secure payments</a>
-                    </div>
-                    <div class="col-md-12 align-items-center mt-3">
-                        <a href=""><img src="assets/images/footer/Page-1.svg" class="img-fluid me-3" alt=""></a>
-                        <a href=""><img src="assets/images/footer/Page-1(1).svg" class="img-fluid me-3" alt=""></a>
-                        <a href=""><img src="assets/images/footer/Page-1(2).svg" class="img-fluid me-3" alt=""></a>
-                    </div>
-
-                    <div class="col-md-12 d-flex align-items-center mt-3">
-                        <a class="copyright-text" href="">Terms & Conditions</a>
-                    </div>
-                </div>
+               
                 <hr />
                 <div class="">
                     <div class="row align-items-center">
                         <div class="col-md-6 col-12 d-none d-sm-block">
-                            <h6 class="mb-0 copyright-text">Namal Balachandra - Sri Lanka (LK) | All Rights Reserved.</h6>
+                            <h6 class="mb-0 copyright-text">OpenWeb - Sri Lanka (LK) | All Rights Reserved.
+                            </h6>
                         </div>
-                        <div
-                            class="col-md-6 col-12 d-flex align-items-center justify-content-md-end justify-content-center">
-                            <a href=""><img src="assets/images/footer/FB_icon-icons.svg" class="img-fluid px-2" alt=""></a>
-                            <a href=""><img src="assets/images/footer/TWITTER_icon-icons.svg" class="img-fluid px-2" alt=""></a>
-                            <a href=""><img src="assets/images/footer/instagram_filled_icon.svg" class="img-fluid px-2"
-                                    alt=""></a>
-                            <a href=""><img src="assets/images/footer/YOUTUBE_icon-icons.svg" class="img-fluid px-2" alt=""></a>
+                        <div class="col-md-6 col-12 d-flex align-items-center justify-content-md-end justify-content-center">
+                            <a class="copyright-text" href="">Secure payments</a>
                         </div>
                         <div
                             class="col-md-6 mt-mb-0 mt-3 col-12 d-block d-sm-none mt-2 px-5 justify-content-md-end justify-content-center text-md-start text-center">
-                            <h6 class="mb-0 copyright-text">Namal Balachandra - Sri Lanka (LK) | All Rights Reserved.</h6>
+                            <h6 class="mb-0 copyright-text">OpenWeb - Sri Lanka (LK) | All Rights Reserved.
+                            </h6>
                         </div>
                     </div>
                 </div>
