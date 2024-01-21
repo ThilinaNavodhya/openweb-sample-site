@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready made single Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"   />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"   />
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+</head>
+
+<body>
+    <!------------------- navbar --------------->
+    <div class="div-nav">
+
+        <!----------------main navbar start----------->
+        <nav class="navbar fixed-top  py-3" id="navbar1">
+            <div class="container-fluid">
+                <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#NavbarOffcanvas"
+                    aria-controls="offcanvasExamplenavbar">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <img src="assets/images/Navbar/Group1.svg" alt="">
+                </a>
+                <a class="navbar-brand d-flex align-items-center justify-content-center" href="/index.html">
+                    <span class="d-flex justify-content-center text-black"><img src="assets/images/Navbar/openweb-logo-3740A4FC5E-seeklogo.com.png"
+                            class="img-fluid navbar-logo text-black" alt=""></span>
+                </a>
+                <div class="d-flex">
+                    <a href="/login.html"><img src="assets/images/Navbar/user-dark.svg" class="img-fluid me-3" alt=""></a>
+                    <a href=""><img src="assets/images/Navbar/cart-dark.svg" class="img-fluid" alt=""></a>
+                </div>
+                <div id="navcol-4" class="collapse navbar-collapse flex-grow-0 mt-2">
+
+                </div>
+            </div>
+        </nav>
+        <!----------------main navbar end----------->
+        
+        <!------------------- navbar offcanvas start--------------->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="NavbarOffcanvas"
+            aria-labelledby="offcanvasExampleLabelnavbar">
+            <div class="offcanvas-header d-flex justify-content-end d-block d-sm-none">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div id="navbarOffcanvaspage1">
+            <div  class="d-flex flex-column justify-content-between overflow-y-scroll Select-fabric-scrollbar" style="height: 90vh;">
+                <div>
+                    <div class="mt-4 mb-4 d-flex justify-content-center">
+
+                        <img src="assets/images/Navbar/openweb-logo-3740A4FC5E-seeklogo.com.png" class="img-fluid" alt="" style="width: 165px;">
+                    </div>
+                    <div>
+                    <div class="my-3 py-3 ms-5">
+                        <a href="/new-arrivals.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">New Arrivals</a>
+                        <a href="/gift-voucher.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Gift Vucher</a>
+                            <a href="/ticket-booking.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Ticket Booking</a>
+                    </div>
+                    <div class="ms-5">
+                        <a href="/product-configurator-suit.html"
+                                class="list-group-item list-group-item-action navbar-offcanvas mb-2">Bestsellers</a>
+                            <a href="/product-configurator.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Product Configurator</a>
+                            <a href="/new-arrivals.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shirts</a>
+                            <a href="/product-configurator-waist-coat.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shoes</a>
+            
+                            <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Looks
+                            Designer</a>
+                    </div>
+                    <div class="ms-5 mt-3 pt-3">
+                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Book your
+                            Appointment</a>
+                    </div>
+                </div>
+                </div>
+                <div>
+                    <div class="ms-5">
+                        <a href="/contact-us.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Contact Us</a>
+                        <a href="/about-us.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">About</a>
+                    </div>
+                
+            </div>
+            </div>
+        </div>
+            
+        </div>
+        <!------------------- navbar offcanvas end--------------->
+
+    </div>
+    <!------------------- navbar end------------>
+
+
+    <!---------------- Ready madesingle Product start-------------------->
+    <section class="mt-xl-0 pt-xl-0 mt-md-5 pt-md-3 mt-5 pt-3" id="ReadymadesingleProduct">
+        <div class="container-fluid g-0">
+            <div class="row g-0 Ready-made-overflow-y-scroll-mq">
+                <div class="border border-secondary mb-0 mt-0 d-block d-xl-none">
+                </div>
+                <div class="col-xl-7 col-md-7 Ready-made-overflow-y-scroll Select-fabric-scrollbar pb-2">
+                    
+                    <div class="mb-2">
+                        <img src="assets/images/Ready-made-single/ezgif-7-5bbef477cf.png" class="img-fluid w-100" alt="">
+                    </div> 
+                    <div class="mb-2 ">
+                        <img src="assets/images/Ready-made-single/ezgif-7-9edafd6d0c.png" class="img-fluid w-100" alt="">
+                    </div>
+                    <div
+                        class=" mb-2 d-xl-flex align-items-xl-end justify-content-between Ready-made-image-width-mq">
+                        <div class="Ready-made-image-text-width Ready-made-image-text-width1">
+                            <h3 class="mb-2 Ready-made-Product-card-image-hadder">Half Canvas</h3>
+                            <p class="Ready-made-Product-card-image-description">Strengthens fine fabrics and ensures a natural formed breast, this canvas molds naturally to you over time for a unique fit.</p>
+                        </div>
+                        <img src="assets/images/Ready-made-single/ezgif-7-7bf47dd48f.png" class="img-fluid Ready-made-image-width"
+                            alt="">
+                    </div>
+                    <div class=" mb-2">
+                        <img src="assets/images/Ready-made-single/ezgif-5-1e8b4cb0b9.png" class="img-fluid w-100" alt="">
+                    </div>
+                    <div
+                        class=" mb-2 d-xl-flex align-items-xl-end justify-content-between Ready-made-image-width-mq">
+                        <div class="Ready-made-image-text-width Ready-made-image-text-width2">
+                            <h3 class="mb-2 Ready-made-Product-card-image-hadder">Mid-weight fabric</h3>
+                            <p class="Ready-made-Product-card-image-description">This mid-weight fabric is made from 100% Wool.</p>
+                        </div>
+                        <img src="assets/images/Ready-made-single/ezgif-5-c134f5dab6.png" class="img-fluid Ready-made-image-width"
+                            alt="">
+                    </div>
+                    <div class="mb-2 ">
+                        <img src="assets/images/Ready-made-single/ezgif-5-60c70432b3.png" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="mb-2 ">
+                        <img src="assets/images/Ready-made-single/ezgif-5-59e1bec477.png" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-5 col-md-5 px-xl-0 px-3 px-md-3 Ready-made-card-mq">
+                    <div class="d-md-flex justify-content-md-center">
+                        <div class="card Ready-made-card border-0">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h5 class="Ready-made-Product-card-name">Navy Havana Suit</h5>
+                                    <p class="Ready-made-Product-card-description">Pure S110's Wool by Vitale Barberis Canonico, Italy
+                                    </p>
+                                </div>
+                                <div class="ms-4">
+                                    <h5 class="Ready-made-Product-card-price">$698</h5>
+                                </div>
+                            </div>
+                            <div class="w-100 mt-2 d-flex">
+                                <button type="button"
+                                    class="btn btn-light d-none me-2 d-sm-block py-2 Ready-made-card-bookmark-btn"><i
+                                        class="fa-regular fa-bookmark"></i></button>
+                                <button class="btn btn-dark  Ready-made-card-cart-btn" type="button"
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                                    aria-controls="offcanvasExample">Add to cart</button>
+                            </div>
+                            <div class="mt-4 w-100">
+                                <div>
+                                    <div class="accordion" id="myAccordion">
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button type="button"
+                                                    class="accordion-button collapsed Ready-made-Product-card-description"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne">Details</button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#myAccordion">
+                                                <div class="card-body Ready-made-Product-card-accordion-text">
+                                                    <p>HTML stands for HyperText Markup Language. HTML is the standard
+                                                        markup language for describing the structure of web pages. <a
+                                                            href="https://www.tutorialrepublic.com/html-tutorial/"
+                                                            target="_blank">Learn more.</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button type="button"
+                                                    class="accordion-button collapsed Ready-made-Product-card-description"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo">Size &
+                                                    Fit</button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                data-bs-parent="#myAccordion">
+                                                <div class="card-body Ready-made-Product-card-accordion-text">
+                                                    <p>Bootstrap is a sleek, intuitive, and powerful front-end framework
+                                                        for faster and easier web development. It is a collection of CSS
+                                                        and HTML conventions. <a
+                                                            href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/"
+                                                            target="_blank">Learn more.</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item border-0">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button type="button"
+                                                    class="accordion-button collapsed Ready-made-Product-card-description"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree">Features</button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                data-bs-parent="#myAccordion">
+                                                <div class="card-body Ready-made-Product-card-accordion-text">
+                                                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify
+                                                        various style properties for a given HTML element such as
+                                                        colors, backgrounds, fonts etc. <a
+                                                            href="https://www.tutorialrepublic.com/css-tutorial/"
+                                                            target="_blank">Learn more.</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------- Ready madesingle Product end-------------------->
+
+
+    <!---------------- Ready madesingle Product owl carousel-------------------->
+    <section id="ReadymadesingleProduct-owl">
+        <div class="container-fluid g-0 py-5 my-md-4">
+
+            <div class="row g-0 justify-content-between d-flex">
+                
+                <div class="col-md-12 col-12">
+                    <h3 class="Ready-made-Product-owl-carousel-text px-4 mb-4">You Might Also Like</h3>
+                    <div class="owl-carousel owl-theme owl-carousel-CustomSuit2 Ready-madesingle-card-widht">
+                        <div class="item">
+                            <div class="card border-0">
+                                <div><img src="assets/images/Ready-made-single/Screen1.png"
+                                        class="img-fluid madesingleProduct-owl-image" alt=""></div>
+                                <div class="mt-4">
+                                    <h1 class="new-item-hadder-text mb-1">Dark Brown Roma Suit</h1>
+                                    <h5 class="new-item-hadder-description mb-1">Suit Pure Linen by Di Sondrio, Italy
+                                    </h5>
+                                    <h1 class="new-item-hadder-text mb-1"> $799</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card border-0">
+                                <div><img src="assets/images/Ready-made-single/Screen1.png" class="img-fluid " alt=""></div>
+                                <div class="mt-4">
+                                    <h1 class="new-item-hadder-text mb-1">Dark Brown Roma Suit</h1>
+                                    <h5 class="new-item-hadder-description mb-1">Suit Pure Linen by Di Sondrio, Italy
+                                    </h5>
+                                    <h1 class="new-item-hadder-text mb-1"> $799</h1>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card border-0">
+                                <div><img src="assets/images/Ready-made-single/Screen1.png" class="img-fluid" alt=""></div>
+                                <div class="mt-4">
+                                    <h1 class="new-item-hadder-text mb-1">Dark Brown Roma Suit</h1>
+                                    <h5 class="new-item-hadder-description mb-1">Suit Pure Linen by Di Sondrio, Italy
+                                    </h5>
+                                    <h1 class="new-item-hadder-text mb-1"> $799</h1>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card border-0">
+                                <div><img src="assets/images/Ready-made-single/Screen1.png" class="img-fluid " alt=""></div>
+                                <div class="mt-4">
+                                    <h1 class="new-item-hadder-text mb-1">Dark Brown Roma Suit</h1>
+                                    <h5 class="new-item-hadder-description mb-1">Suit Pure Linen by Di Sondrio, Italy
+                                    </h5>
+                                    <h1 class="new-item-hadder-text mb-1"> $799</h1>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!---------------- Ready madesingle Product owl carousel end-------------------->
+
+
+    <!---------------- Ready made single Product offcanvas start-------------------->
+    <section class="" id="ReadymadesingleProductoffcanvas">
+        <div class="offcanvas offcanvas-start Ready-Product-offcanvas-overflow-mq" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class=" mx-md-5 mx-2 d-flex align-items-center justify-content-between my-5">
+                <div class="d-flex">
+                    <h5 class="Ready-made-offcanvas-text me-3 mb-0" id="offcanvasExampleLabel">YOUR CART</h5>
+                    <h5 class="Ready-made-offcanvas-price mb-0" id="offcanvasExampleLabel">$ 320</h5>
+                </div>
+                <div class="text-end">
+                    <button type="button" class="btn text-reset p-0" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                            class="fa-regular fa-circle-left fa-xl"></i></button>
+                </div>
+            </div>
+            <div class="mx-md-5 mx-2 overflow-y-scroll Select-fabric-scrollbar Ready-Product-offcanvas-overflow-scroll">
+
+                <div class="card border-0 shadow-none">
+                    <div class="card-body d-flex p-0 justify-content-between align-items-center">
+                        <div class="d-flex">
+                            <img class="img-fluid" src="assets/images/Ready-made-single/P6725_25-small.png" />
+                            <div class="ms-3">
+                                <h5 class="Ready-made-offcanvas-card-hadder mb-0">Stylish Winter Coat</h5>
+                                <p class="Ready-made-offcanvas-card-address">Pure Wool by Angelico, Italy</p>
+                                <div class="mt-5 d-flex">
+                                    <h3 class="Ready-made-offcanvas-card-address">Colour: &nbsp;<span
+                                            class="Ready-made-offcanvas-card-color">Brown</span>
+                                    </h3>
+
+                                    <h3 class="Ready-made-offcanvas-card-address ms-2">Sizer: &nbsp;<span
+                                            class="Ready-made-offcanvas-card-color">36</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <button type="button" class="btn-close"></button>
+                            <p class="Ready-made-offcanvas-card-price mb-0 mt-5">$350</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card border-0 shadow-none">
+                    <div class="card-body d-flex p-0 justify-content-between align-items-center">
+                        <div class="d-flex">
+                            <img class="img-fluid" src="assets/images/Ready-made-single/P6725_25-small.png" />
+                            <div class="ms-3">
+                                <h5 class="Ready-made-offcanvas-card-hadder mb-0">Stylish Winter Coat</h5>
+                                <p class="Ready-made-offcanvas-card-address">Pure Wool by Angelico, Italy</p>
+                                <div class="mt-5 d-flex">
+                                    <h3 class="Ready-made-offcanvas-card-address">Colour: &nbsp;<span
+                                            class="Ready-made-offcanvas-card-color">Brown</span>
+                                    </h3>
+
+                                    <h3 class="Ready-made-offcanvas-card-address ms-2">Sizer: &nbsp;<span
+                                            class="Ready-made-offcanvas-card-color">36</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <button type="button" class="btn-close"></button>
+                            <p class="Ready-made-offcanvas-card-price mb-0 mt-5">$350</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="card border-0 shadow-none">
+                    <div class="card-body d-flex p-0 justify-content-between align-items-center">
+                        <div class="d-flex">
+                            <img class="img-fluid" src="assets/images/Ready-made-single/P6725_25-small.png" />
+                            <div class="ms-3">
+                                <h5 class="Ready-made-offcanvas-card-hadder mb-0">Stylish Winter Coat</h5>
+                                <p class="Ready-made-offcanvas-card-address">Pure Wool by Angelico, Italy</p>
+                                <div class="mt-5 d-flex">
+                                    <h3 class="Ready-made-offcanvas-card-address">Colour: &nbsp;<span
+                                            class="Ready-made-offcanvas-card-color">Brown</span>
+                                    </h3>
+
+                                    <h3 class="Ready-made-offcanvas-card-address ms-2">Sizer: &nbsp;<span
+                                            class="Ready-made-offcanvas-card-color">36</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <button type="button" class="btn-close"></button>
+                            <p class="Ready-made-offcanvas-card-price mb-0 mt-5">$350</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+            </div>
+
+            <div class="mx-md-5 mx-2 mt-4 d-flex justify-content-between">
+                <div>
+                    <h2 class="Ready-made-offcanvas-card-subtotal mb-3">Sub Total</h2>
+                    <h2 class="Ready-made-offcanvas-card-subtotal mb-3">Delivery charge</h2>
+                    <h2 class="Ready-made-offcanvas-card-total">Total</h2>
+                </div>
+
+                <div class="text-end">
+                    <h2 class="Ready-made-offcanvas-card-price mb-3">$236.24</h2>
+                    <h2 class="Ready-made-offcanvas-card-price mb-3">$20.00</h2>
+                    <h2 class="Ready-made-offcanvas-card-total">$320.00</h2>
+                </div>
+            </div>
+
+            <div class="row mx-md-5 mx-2 mt-4 g-0 flex-md-row-reverse">
+
+                <div class="col-md-6 text-end">
+                    <button type="button" class="btn btn-outline Ready-Product-offcanvas-btn1 py-2 mb-2">VIEW
+                        BAG</button>
+                    <button type="button" class="btn btn-secondary Ready-Product-offcanvas-btn2 py-2 w-100">PROCEED TO
+                        PAY</button>
+                </div>
+
+                <div
+                    class="col-md-6 mt-md-5 mt-4 d-flex align-items-end justify-content-md-start justify-content-center">
+                    <div class="d-flex">
+                        <img class="img-fluid me-2" src="assets/images/Ready-made-single/Vector.svg" />
+                        <img class="img-fluid me-2" src="assets/images/Ready-made-single/Group.svg" />
+                        <img class="img-fluid me-2" src="assets/images/Ready-made-single/Group 161.svg" />
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!---------------- Ready made single Product offcanvas end-------------------->
+
+
+    <!-- Back to top button start -->
+    <section class="">
+        <div class="container-fluid">
+            <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+                <img src="assets/images/ScrollTop.svg" class="img-fluid" alt="" id="scrollTopWhite">
+                <img src="assets/images/ScrollTop-black.svg" class="img-fluid" alt="" id="scrollTopBlack">
+            </button>
+            <button type="button" class="btn btn-input chat-buttion">
+                <i class="fa-solid fa-message" style="color: #ffffff;"></i>
+            </button>
+        </div>
+    </section>
+    <!-- Back to top button start -->
+
+
+    <!-- Footer Start-->
+    <div class="div-footer">
+
+        <!-- footer desktop start-->
+        <footer class="text-white bg-black d-none d-xl-block" id="footer">
+            <div class="container-fluid px-md-5 px-3 pt-5 pb-3">
+                <div class="row justify-content-center mt-4">
+                    <div
+                        class="col-md-4 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start  item social">
+                        <p class="mb-0 footer-header">Contact </p>
+                        <ul class="list-unstyled">
+
+                            <li class="mt-2"><a class="link footer-list" href="#">WhatsApp: +94 655 110 516</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Call: +94443289234</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Email: service@nb.lk</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-2 text-center text-lg-start d-flex flex-column item">
+                        <p class="mb-0 footer-header">Contact </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-2"><a class="link footer-list" href="#">Shop By</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Suits</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Jackets & Blazers</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Trousers</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Suits</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Coats</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 text-center text-lg-start d-flex flex-column item">
+                        <p class="mb-0 footer-header">Support </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-2"><a class="link footer-list" href="#">Shipping & Delivery</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Returns & Exchanges</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Perfect Fit Guides</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">FAQ</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-2 text-center text-lg-start d-flex flex-column item">
+                        <p class="mb-0 footer-header">Services </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-2"><a class="link footer-list" href="#">Plan Your Visit</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Custom Made</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Alterations</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Size Passport</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Gift Cards</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-2 text-center text-lg-start d-flex flex-column item">
+                        <p class="mb-0 footer-header">About </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-2"><a class="link footer-list" href="#">Store Experience</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Our Story</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Press</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Sustainability</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <h6 class="mb-0 copyright-text">Namal Balachandra - Sri Lanka (LK) | All Rights Reserved.</h6>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <a href=""><img src="assets/images/footer/FB_icon-icons.svg" class="img-fluid px-2" alt=""></a>
+                            <a href=""><img src="assets/images/footer/TWITTER_icon-icons.svg" class="img-fluid px-2" alt=""></a>
+                            <a href=""><img src="assets/images/footer/instagram_filled_icon.svg" class="img-fluid px-2"
+                                    alt=""></a>
+                            <a href=""><img src="/images/footer/YOUTUBE_icon-icons.svg" class="img-fluid px-2" alt=""></a>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center">
+                            <a class="me-4 copyright-text" href="">Secure payments</a>
+                            <a href=""><img src="assets/images/footer/Page-1.svg" class="img-fluid me-3" alt=""></a>
+                            <a href=""><img src="assets/images/footer/Page-1(1).svg" class="img-fluid me-3" alt=""></a>
+                            <a href=""><img src="assets/images/footer/Page-1(2).svg" class="img-fluid me-3" alt=""></a>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center justify-content-end">
+                            <a class="me-4 copyright-text" href="">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer desktop end-->
+        <!-- footer mobile  start-->
+        <footer class="text-white bg-black d-block d-xl-none" id="footer">
+            <div class="container-fluid px-md-5 px-3 pb-3">
+                <div class="row justify-content-center pt-4">
+                    <div
+                        class="col-md-6 col-12 text-center  text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start  item social">
+                        <div class="accordion accordion-flush bg-black w-100" id="accordionFlushExample">
+                            <div class="accordion-item bg-black border-0">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button border-0 collapsed bg-black text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Contact Us
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse  collapse text-white"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class=" footer-list" href="#">WhatsApp: +94 655 110 516</a>
+                                            </li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Call: +94443289234</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Mail: service@nb.lk</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-black border-0">
+                                <h2 class="accordion-header border-0" id="flush-heading2">
+                                    <button class="accordion-button border-0 collapsed bg-black text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false"
+                                        aria-controls="flush-collapse2">
+                                        Services
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse2" class="accordion-collapse collapse text-white"
+                                    aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body border-0 py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class="footer-list" href="#">Shop By</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Suits</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Jackets & Blazers</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Trousers</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Suits</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Coats</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-black border-0">
+                                <h2 class="accordion-header border-0" id="flush-heading3">
+                                    <button class="accordion-button collapsed bg-black text-white border-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false"
+                                        aria-controls="flush-collapse3">
+                                        Support
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse3" class="accordion-collapse collapse text-white"
+                                    aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body border-0 py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class="footer-list" href="#">Shipping & Delivery</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Returns & Exchanges</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Perfect Fit Guides</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">FAQ</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Accessibility</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 text-center text-lg-start d-flex flex-column item">
+                        <div class="accordion accordion-flush bg-black w-100" id="accordionFlushExample2">
+                            <div class="accordion-item bg-black border-0">
+                                <h2 class="accordion-header border-0" id="flush-heading4">
+                                    <button class="accordion-button border-0 collapsed bg-black text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false"
+                                        aria-controls="flush-collapse4">
+                                        Services
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse4" class="accordion-collapse collapse text-white"
+                                    aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample2">
+                                    <div class="accordion-body border-0 py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class="footer-list" href="#">Shop By</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Suits</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Jackets & Blazers</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Trousers</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Suits</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Coats</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-black border-0">
+                                <h2 class="accordion-header border-0" id="flush-heading5">
+                                    <button class="accordion-button collapsed bg-black text-white border-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false"
+                                        aria-controls="flush-collapse5">
+                                        Support
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse5" class="accordion-collapse collapse text-white"
+                                    aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample2">
+                                    <div class="accordion-body border-0 py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class="footer-list" href="#">Shipping & Delivery</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Returns & Exchanges</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Perfect Fit Guides</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">FAQ</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Accessibility</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ms-2 pb-3 mt-mb-0 mt-4">
+                    <div class="col-md-12 mt-2">
+                        <a class="copyright-text" href="">Secure payments</a>
+                    </div>
+                    <div class="col-md-12 align-items-center mt-3">
+                        <a href=""><img src="assets/images/footer/Page-1.svg" class="img-fluid me-3" alt=""></a>
+                        <a href=""><img src="assets/images/footer/Page-1(1).svg" class="img-fluid me-3" alt=""></a>
+                        <a href=""><img src="assets/images/footer/Page-1(2).svg" class="img-fluid me-3" alt=""></a>
+                    </div>
+
+                    <div class="col-md-12 d-flex align-items-center mt-3">
+                        <a class="copyright-text" href="">Terms & Conditions</a>
+                    </div>
+                </div>
+                <hr />
+                <div class="">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-12 d-none d-sm-block">
+                            <h6 class="mb-0 copyright-text">Namal Balachandra - Sri Lanka (LK) | All Rights Reserved.</h6>
+                        </div>
+                        <div
+                            class="col-md-6 col-12 d-flex align-items-center justify-content-md-end justify-content-center">
+                            <a href=""><img src="assets/images/footer/FB_icon-icons.svg" class="img-fluid px-2" alt=""></a>
+                            <a href=""><img src="assets/images/footer/TWITTER_icon-icons.svg" class="img-fluid px-2" alt=""></a>
+                            <a href=""><img src="assets/images/footer/instagram_filled_icon.svg" class="img-fluid px-2"
+                                    alt=""></a>
+                            <a href=""><img src="assets/images/footer/YOUTUBE_icon-icons.svg" class="img-fluid px-2" alt=""></a>
+                        </div>
+                        <div
+                            class="col-md-6 mt-mb-0 mt-3 col-12 d-block d-sm-none mt-2 px-5 justify-content-md-end justify-content-center text-md-start text-center">
+                            <h6 class="mb-0 copyright-text">Namal Balachandra - Sri Lanka (LK) | All Rights Reserved.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer mobile end-->
+
+    </div>
+    <!-- Footer End-->
+
+   <!-- script start-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.js"></script>
+  <!-- script start-->
+</body>
+
+
+</html>

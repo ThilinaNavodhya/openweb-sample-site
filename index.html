@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Sen:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!---------------- navbar start ---------------->
+    <div class="div-nav">
+
+        <!----------- navbar transparent  ----------->
+        <nav class="navbar fixed-top navcolor py-3" id="original-navbar">
+            <div class="container-fluid">
+                <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#NavbarOffcanvas"
+                    aria-controls="NavbarOffcanvas">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <img src="assets/images/Navbar/Group2.svg" class="" alt="">
+                </a>
+                <a class="navbar-brand d-flex align-items-center justify-content-center" href="/index.html">
+                    <span class="d-flex justify-content-center"><img src="assets/images/Navbar/openweb-logo-3740A4FC5E-seeklogo.com.png"
+                            class="img-fluid navbar-logo" alt=""></span>
+                </a>
+                <div class="d-flex">
+                    <a href="/login.html"><img src="assets/images/Navbar/user.svg" class="img-fluid me-3" alt=""></a>
+                    <a href=""><img src="assets/images/Navbar/cart.svg" class="img-fluid" alt=""></a>
+                </div>
+                <div id="navcol-4" class="collapse navbar-collapse flex-grow-0 mt-2">
+                </div>
+            </div>
+        </nav>
+        <!----------- navbar transparent end----------->
+
+        <!----------- navbar white----------->
+        <nav class="navbar fixed-top navcolor py-3" id="scrolled-navbar">
+            <div class="container-fluid">
+                <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#NavbarOffcanvas"
+                    aria-controls="NavbarOffcanvas">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <img src="assets/images/Navbar/Group1.svg" alt="">
+                </a>
+                <a class="navbar-brand d-flex align-items-center justify-content-center" href="/index.html">
+                    <span class="d-flex justify-content-center text-black"><img
+                            src="assets/images/Navbar/openweb-logo-3740A4FC5E-seeklogo.com.png" class="img-fluid navbar-logo text-black"
+                            alt=""></span>
+                </a>
+                <div class="d-flex">
+                    <a href="/login.html"><img src="assets/images/Navbar/user-dark.svg" class="img-fluid me-3"
+                            alt=""></a>
+                    <a href=""><img src="assets/images/Navbar/cart-dark.svg" class="img-fluid" alt=""></a>
+                </div>
+                <div id="navcol-4" class="collapse navbar-collapse flex-grow-0 mt-2">
+                </div>
+            </div>
+        </nav>
+        <!----------- navbar white end----------->
+
+        <!----------- navbar offcanvas----------->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="NavbarOffcanvas"
+            aria-labelledby="offcanvasExampleLabelnavbar">
+            <div class="offcanvas-header d-flex justify-content-end d-block d-sm-none">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div id="navbarOffcanvaspage1">
+            <div  class="d-flex flex-column justify-content-between overflow-y-scroll Select-fabric-scrollbar" style="height: 90vh;">
+                <div>
+                    <div class="mt-4 mb-4 d-flex justify-content-center">
+
+                        <img src="assets/images/Navbar/openweb-logo-3740A4FC5E-seeklogo.com.png" class="img-fluid" alt="" style="width: 165px;">
+                    </div>
+                    <div>
+                    <div class="my-3 py-3 ms-5">
+                        <a href="/new-arrivals.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">New Arrivals</a>
+                        <a href="/gift-voucher.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Gift Vucher</a>
+                            <a href="/ticket-booking.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Ticket Booking</a>
+                    </div>
+                    <div class="ms-5">
+                        <a href="/product-configurator-suit.html"
+                                class="list-group-item list-group-item-action navbar-offcanvas mb-2">Bestsellers</a>
+                            <a href="/product-configurator.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Product Configurator</a>
+                            <a href="/new-arrivals.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shirts</a>
+                            <a href="/product-configurator-waist-coat.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shoes</a>
+            
+                            <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Looks
+                            Designer</a>
+                    </div>
+                    <div class="ms-5 mt-3 pt-3">
+                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Book your
+                            Appointment</a>
+                    </div>
+                </div>
+                </div>
+                <div>
+                    <div class="ms-5">
+                        <a href="/contact-us.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Contact Us</a>
+                        <a href="/about-us.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">About</a>
+                    </div>
+                
+            </div>
+            </div>
+        </div>
+            
+        </div>
+        <!----------- navbar offcanvas end----------->
+
+    </div>
+    <!---------------- navbar end ------------------>
+
+
+    <!-------------- cover head start--------------->
+    <div class="div-cover-head">
+
+        <!----------------------- cover head carousel start---------->
+        <section id="coverhead" class="cover-head-Catalogue-text-mq element">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide position-relative"
+                data-bs-ride="carousel">
+                <div class="d-none d-xl-block">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                </div>
+                <!-- carousel items  start-->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="assets/images/Cover-head/dark-haired-woman-with-red-lipstick-smiles-leans-stand-with-clothes-holds-package-pink-background.jpg"
+                            class="w-100 h-100 d-none d-xl-block cover-head-image-hide" alt="...">
+
+                        <img src="assets/images/Cover-head/8104a7de22434ad331fd4e1cead78ae7.jpg"
+                            class="w-100 cover-head-image-size-mob d-block d-xl-none" alt="...">
+
+                    </div>
+
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="assets/images/Cover-head/dark-haired-woman-with-red-lipstick-smiles-leans-stand-with-clothes-holds-package-pink-background.jpg"
+                            class="w-100 h-100 d-none d-xl-block cover-head-image-hide" alt="...">
+
+                        <img src="assets/images/Cover-head/8104a7de22434ad331fd4e1cead78ae7.jpg"
+                            class="w-100 cover-head-image-size-mob d-block d-xl-none" alt="...">
+
+                    </div>
+
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="assets/images/Cover-head/dark-haired-woman-with-red-lipstick-smiles-leans-stand-with-clothes-holds-package-pink-background.jpg"
+                            class="w-100 h-100 d-none d-xl-block cover-head-image-hide" alt="...">
+
+                        <img src="assets/images/Cover-head/8104a7de22434ad331fd4e1cead78ae7.jpg"
+                            class="w-100 cover-head-image-size-mob d-block d-xl-none" alt="...">
+                    </div>
+
+                </div>
+                <!-- carousel items  end-->
+                <!-- carousel text list start-->
+                <div class="cover-head-Catalogue container1 ms-xxl-5 ms-md-2">
+                    <ul class="">
+                        <h2 class="mt-md-3 cover-head-Catalogue-text"><a class="carousel-items" href="/new-arrivals.html">New Arrivals</a>
+                        </h2>
+                        <h2 class="mt-md-3 cover-head-Catalogue-text"><a class="carousel-items" href=""> Bestsellers</a>
+                        </h2>
+                        <h2 class="mt-md-3 cover-head-Catalogue-text"><a class="carousel-items" href="/new-arrivals.html">Suits</a></h2>
+                        <h2 class="mt-md-3 cover-head-Catalogue-text"><a class="carousel-items" href="">Bridal
+                                collection</a></h2>
+                        <h2 class="mt-md-3 cover-head-Catalogue-text"><a class="carousel-items" href="">Shirts</a></h2>
+                        <h2 class="mt-md-3 cover-head-Catalogue-text"><a class="carousel-items" href="">Trousers</a>
+                        </h2>
+                        <h2 class="mt-md-3 cover-head-Catalogue-text"><a class="carousel-items" href="">Eveningware</a>
+                        </h2>
+                        <h2 class="mt-md-3 cover-head-Catalogue-text"><a class="carousel-items" href="">Shoes</a></h2>
+                        <h2 class="mt-md-3 cover-head-Catalogue-text"><a class="carousel-items" href="">Accessories</a>
+                        </h2>
+                    </ul>
+                    </p>
+                </div>
+                <!-- carousel text list start-->
+            </div>
+        </section>
+        <!------------ cover head carousel end---------->
+
+        <!------------ cover head image start---------->
+        <section>
+            <div class="container-fluid g-0">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <a href="/new-arrivals.html">
+                        <img src="assets/images/Cover-head/46JX124C 1.png" class="img-fluid w-100" alt=""
+                            style="height: 100%">
+                        <h6 class="text-white cover-head-image-text">Dark Roma Suit</h6>
+                    </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="/new-arrivals.html">
+                        <img src="assets/images/Cover-head/002immagine-box-desktop 1.png" class="img-fluid w-100"
+                            alt="">
+                        <h6 class="text-white cover-head-image-text">Dark Roma Suit</h6>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------ cover head image end---------->
+
+    </div>
+    <!--------------- cover head end------------------>
+
+
+    <!-- Design your own Custom start-->
+    <section class="bg-light" id="DesignyourownCustom">
+        <!-- Design your own Custom desktop start -->
+        <div class="container-fluid md-g-0 px-5 d-none d-md-block">
+            <div class="row d-flex align-items-md-center">
+                <div class="col-md-3">
+                    <div>
+                        <h6 class="mb-2 Design-your-own-Custom">Custom Made Tailoring</h6>
+                        <h2 class="Design-your-own">Design your own
+                            Custom Suit &
+                            Trouser with
+                            desired fabric
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-2 d-flex align-items-start justify-content-center">
+                    <!-- Design your own Custom owl carousel start-->
+                    <div class="owl-carousel owl-theme owl-carousel-CustomSuit">
+                        <div class="item">
+                            <div class="">
+                                <div><img src="assets/images/Custom-Suit/zendaya-attends-the-bulgari-hotel-roma-opening-event-at-news-photo-1686309478.jpg" class="img-fluid" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="">
+                                <div><img src="assets/images/Custom-Suit/zendaya-attends-the-bulgari-hotel-roma-opening-event-at-news-photo-1686309478.jpg" class="img-fluid" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="">
+                                <div><img src="assets/images/Custom-Suit/zendaya-attends-the-bulgari-hotel-roma-opening-event-at-news-photo-1686309478.jpg" class="img-fluid" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Design your own Custom owl carousel end-->
+                </div>
+                
+                <div class="col-md-5 d-flex align-items-center justify-content-center">
+
+                    <div class="">
+                        
+                        <button class="btn btn-secondary bg-white text-black rounded-1 py-md-2 w-100 mb-2"
+                            type="button">Custom Mode Tailoring</button>
+                        <button class="btn btn-dark rounded-1 py-md-2  w-100" type="button">Book your
+                            appointment</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Design your own Custom desktop end -->
+        <!-- Design your own Custom mobile start -->
+        <div class="container-fluid md-g-0 d-block d-md-none bg-white">
+            <div class="row pt-5 pb-5">
+                <div class="col-12">
+                    <div class="fabrice-header">
+                        <hr>
+                        <h6 class="mb-2 Design-your-own-Custom">Custom Made Tailoring</h6>
+                        <h2 class="Design-your-own">Design your own
+                            Custom Suit &
+                            Trouser with
+                            desired fabric
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex g-0 align-items-xl-center">
+                <div class="col-12 d-flex align-items-start">
+                    <!-- Design your own Custom owl carousel start-->
+                    <div class="owl-carousel owl-theme owl-carousel-CustomSuit">
+                        <div class="item">
+                            <div class="">
+                                <div><img src="assets/images/Custom-Suit/zendaya-attends-the-bulgari-hotel-roma-opening-event-at-news-photo-1686309478.jpg" class="img-fluid" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="">
+                                <div><img src="assets/images/Custom-Suit/zendaya-attends-the-bulgari-hotel-roma-opening-event-at-news-photo-1686309478.jpg" class="img-fluid" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="">
+                                <div><img src="assets/images/Custom-Suit/zendaya-attends-the-bulgari-hotel-roma-opening-event-at-news-photo-1686309478.jpg" class="img-fluid" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Design your own Custom owl carousel end-->
+                </div>
+                
+            </div>
+            <div class="row mt-3 mb-4">
+                <div class="col-12 d-flex align-items-center">
+
+                    <div class=" w-100">
+                        <button class="btn btn-secondary bg-white text-black rounded-1 py-3 w-100 mb-2"
+                            type="button">Custom Mode Tailoring</button>
+                        <button class="btn btn-dark rounded-1 py-3 w-100" type="button">Book your appointment</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Design your own Custom mobile end -->
+    </section>
+    <!-- Design your own Custom end-->
+
+
+    <!-- The change of direction cards start-->
+    <section>
+        <div class="container-fluid g-0">
+            <div class="row g-0 d-none d-lg-block">
+                <div class="col-md-12">
+                    <div class="direction-cardes-1">
+                        <a href="/new-arrivals.html" class="text-white change-of-direction">New Arrivals</a>
+                    </div>
+                    <a href="/new-arrivals.html"><img src="assets/images/direction-cardes/studio-close-up-portrait-young-fresh-blonde-woman-brown-straw-poncho-wool-black-trendy-hat-round-glasses-looking-camera-green-leather-had-bag.jpg" class="img-fluid w-100"
+                        alt=""></a>
+                </div>
+            </div>
+            <div class="row g-0">
+
+                <div class="col-md-6">
+                    <a href="/new-arrivals.html">
+                    <img src="assets/images/direction-cardes/46GG350046Jx140C-Variante1.png" class="img-fluid w-100"
+                        alt="">
+                    <h6 class="text-white cover-head-image-text">Dark Brown Roma Suit</h6>
+                </a>
+                </div>
+
+                <div class="col-md-6">
+                    <a href="/new-arrivals.html">
+                    <img src="assets/images/direction-cardes/46GG350046Jx140C-Variante2.png" class="img-fluid w-100"
+                        alt="">
+                    <h6 class="text-white cover-head-image-text">Dark Brown Roma Suit</h6>
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- The change of direction cards end-->
+
+
+    <!-- FASHION SHOW COLLECTIONS Start-->
+    <section class="d-none d-md-block">
+        <div class="container-fluid g-0">
+            <div class="row g-0">
+                <img src="assets/images/direction-cardes/glamorous-pretty-women-posing-wearing-fur-coats.jpg" class="img-fluid w-100" alt="">
+                <div class="col-md-12 position-relative fashion-collections">
+                    <div class="text-center">
+                        <!-- <img src="/images/direction-cardes/index-media-cover-art-play-button-overlay-5 1.png" class="img-fluid play-icon" alt=""> -->
+                        <!-- <i class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></i> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="4em"
+                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #ffffff
+                                }
+                            </style>
+                            <path
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+                        </svg>
+                        <div class="text mx-auto" style="max-width: 1000px;">
+                            <h2 class="text-white mt-3 fashion-show-header">FASHION SHOW COLLECTIONS 2024 
+                                WEEK</h2>
+                            <h6 class="text-white fashion-collections-text mx-auto fashion-show-description">Sensuality
+                                is the key word for clothes inspired by the Sunset Strip, which with its legendary
+                                history is the setting for a style full of charm.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FASHION SHOW COLLECTIONS end-->
+
+
+    <!-- nearest store start-->
+    <section class="footer-background-color text-white">
+        <div class="container-fluid px-md-5 px-3 py-md-0 py-xl-0 py-4">
+            <div class="row d-flex justify-content-between py-md-5">
+                <div class="col-xl-4 col-md-6 col-12">
+                    <p class="nearest-store">Find your nearest store</p>
+                    <p class="nearest-store2">Visit one of our stores for customizations,
+                        fittings & styling advice.</p>
+                    <p class="mt-md-5 py-md-0 py-3 Find-store nearest-store3">Go to store</p>
+                </div>
+                <div class="col-xl-4 col-md-6 col-12">
+                    <p class="mb-1 nearest-store-Download nearest-store" style="max-width: 261px;">Download App
+                    </p>
+                    <p class="nearest-store2">Exclusive Deals and Offers!</p>
+                    <div class="d-flex align-items-center">
+                        <a href=""><img src="assets/images/nearest-store/Group-155.svg" class="img-fluid" alt=""></a>
+                        <a href=""><img src="assets/images/nearest-store/google-play-badge 1.svg" class="img-fluid"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nearest store end-->
+
+
+    <!-- products and styling start-->
+    <section class="py-4 py-xl-5 py-3 footer-background-color" style="border-top: 1px solid #4B4B4B;
+    border-bottom: 1px solid #4B4B4B;">
+        <div class="container-fluid px-md-5 px-3">
+            <div class="row text-white align-items-center">
+                <div class="col-md-5 col-12">
+                    <div class=" text-lg-start">
+                        <p class="Get-the-latest mb-2"><strong>Get new products and styling</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-5 col-9">
+                    <form name="contact" class="contact-form validate-form" method="post">
+                        <div class="d-flex" data-validate="Please enter your name">
+                            <input class="input border-0" type="text" name="name" placeholder="Enter your email">
+                            <button class="btn btn-input border-0 text-white rounded-1 pe-md-4 nearest-store-btn"
+                                type="button" id="button-addon2">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2 col-2">
+                    <button type="button" class="btn btn-input nearest-store-search-btn"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- products and styling end-->
+
+
+    <!-- Back to top button start -->
+    <section class="">
+        <div class="container-fluid">
+            <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+                <img src="assets/images/ScrollTop.svg" class="img-fluid" alt="" id="scrollTopWhite">
+                <img src="assets/images/ScrollTop-black.svg" class="img-fluid" alt="" id="scrollTopBlack">
+            </button>
+            <button type="button" class="btn btn-input chat-buttion">
+                <i class="fa-solid fa-message" style="color: #ffffff;"></i>
+            </button>
+        </div>
+    </section>
+    <!-- Back to top button start -->
+
+
+    <!-- Footer Start-->
+    <div class="div-footer">
+
+        <!-- footer desktop start-->
+        <footer class="text-white footer-background-color d-none d-xl-block" id="footer">
+            <div class="container-fluid px-md-5 px-3 pt-5 pb-3">
+                <div class="row justify-content-center mt-4">
+                    <div
+                        class="col-md-4 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start  item social">
+                        <p class="mb-0 footer-header">Contact </p>
+                        <ul class="list-unstyled">
+
+                            <li class="mt-2"><a class="link footer-list" href="#">WhatsApp: +600 655 117 516</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Call: +600 93 446 28 9234</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Email: service@sttl.lk</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-2 text-center text-lg-start d-flex flex-column item">
+                        <p class="mb-0 footer-header">Contact </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-2"><a class="link footer-list" href="#">Shop By</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Suits</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Jackets & Blazers</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Trousers</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Suits</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Coats</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 text-center text-lg-start d-flex flex-column item">
+                        <p class="mb-0 footer-header">Support </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-2"><a class="link footer-list" href="#">Shipping & Delivery</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Returns & Exchanges</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Perfect Fit Guides</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">FAQ</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-2 text-center text-lg-start d-flex flex-column item">
+                        <p class="mb-0 footer-header">Services </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-2"><a class="link footer-list" href="#">Plan Your Visit</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Custom Made</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Alterations</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Size Passport</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Gift Cards</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-2 text-center text-lg-start d-flex flex-column item">
+                        <p class="mb-0 footer-header">About </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-2"><a class="link footer-list" href="#">Store Experience</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Our Story</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Press</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Sustainability</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h6 class="mb-0 copyright-text">OpenWeb - Sri Lanka (LK) | All Rights Reserved.
+                            </h6>
+                        </div>
+                        
+                        <div class="col-md-6 d-flex align-items-center justify-content-end">
+                            <a class="me-4 copyright-text" href="">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer desktop end-->
+        <!-- footer mobile  start-->
+        <footer class="text-white footer-background-color d-block d-xl-none" id="footer">
+            <div class="container-fluid px-md-5 px-3 pb-3">
+                <div class="row justify-content-center pt-4">
+                    <div
+                        class="col-md-6 col-12 text-center  text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start  item social">
+                        <div class="accordion accordion-flush footer-background-color w-100" id="accordionFlushExample">
+                            <div class="accordion-item footer-background-color border-0">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button border-0 collapsed footer-background-color text-white"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Contact Us
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse  collapse text-white"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class="link footer-list" href="#">WhatsApp: +600 655 117 516</a></li>
+                                            <li class="mt-2"><a class="link footer-list" href="#">Call: +600 93 446 28 9234</a></li>
+                                            <li class="mt-2"><a class="link footer-list" href="#">Email: service@sttl.lk</a></li>
+                                        
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item footer-background-color border-0">
+                                <h2 class="accordion-header border-0" id="flush-heading2">
+                                    <button class="accordion-button border-0 collapsed footer-background-color text-white"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2"
+                                        aria-expanded="false" aria-controls="flush-collapse2">
+                                        Services
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse2" class="accordion-collapse collapse text-white"
+                                    aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body border-0 py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class="footer-list" href="#">Shop By</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Suits</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Jackets & Blazers</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Trousers</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Suits</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Coats</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item footer-background-color border-0">
+                                <h2 class="accordion-header border-0" id="flush-heading3">
+                                    <button class="accordion-button collapsed footer-background-color text-white border-0"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3"
+                                        aria-expanded="false" aria-controls="flush-collapse3">
+                                        Support
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse3" class="accordion-collapse collapse text-white"
+                                    aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body border-0 py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class="footer-list" href="#">Shipping & Delivery</a>
+                                            </li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Returns & Exchanges</a>
+                                            </li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Perfect Fit Guides</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">FAQ</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Accessibility</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 text-center text-lg-start d-flex flex-column item">
+                        <div class="accordion accordion-flush footer-background-color w-100" id="accordionFlushExample2">
+                            <div class="accordion-item footer-background-color border-0">
+                                <h2 class="accordion-header border-0" id="flush-heading4">
+                                    <button class="accordion-button border-0 collapsed footer-background-color text-white"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4"
+                                        aria-expanded="false" aria-controls="flush-collapse4">
+                                        Services
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse4" class="accordion-collapse collapse text-white"
+                                    aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample2">
+                                    <div class="accordion-body border-0 py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class="footer-list" href="#">Shop By</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Suits</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Jackets & Blazers</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Trousers</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Suits</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Coats</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item footer-background-color border-0">
+                                <h2 class="accordion-header border-0" id="flush-heading5">
+                                    <button class="accordion-button collapsed footer-background-color text-white border-0"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5"
+                                        aria-expanded="false" aria-controls="flush-collapse5">
+                                        Support
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse5" class="accordion-collapse collapse text-white"
+                                    aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample2">
+                                    <div class="accordion-body border-0 py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class="footer-list" href="#">Shipping & Delivery</a>
+                                            </li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Returns & Exchanges</a>
+                                            </li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Perfect Fit Guides</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">FAQ</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Accessibility</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <hr />
+                <div class="">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-12 d-none d-sm-block">
+                            <h6 class="mb-0 copyright-text">OpenWeb - Sri Lanka (LK) | All Rights Reserved.
+                            </h6>
+                        </div>
+                        <div class="col-md-6 col-12 d-flex align-items-center justify-content-md-end justify-content-center">
+                            <a class="copyright-text" href="">Secure payments</a>
+                        </div>
+                        <div
+                            class="col-md-6 mt-mb-0 mt-3 col-12 d-block d-sm-none mt-2 px-5 justify-content-md-end justify-content-center text-md-start text-center">
+                            <h6 class="mb-0 copyright-text">OpenWeb - Sri Lanka (LK) | All Rights Reserved.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer mobile end-->
+
+    </div>
+    <!-- Footer End-->
+
+
+    <!-- script start-->
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- script end-->
+</body>
+
+</html>

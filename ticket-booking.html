@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <style>
+        html,
+        body {
+            overflow-x: hidden !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!---------------- navbar start ---------------->
+    <div class="div-nav">
+
+        <!----------- navbar transparent  ----------->
+        <nav class="navbar fixed-top navcolor py-3" id="original-navbar">
+            <div class="container-fluid">
+                <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#NavbarOffcanvas"
+                    aria-controls="NavbarOffcanvas">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <img src="assets/images/Navbar/Group2.svg" alt="">
+                </a>
+                <a class="navbar-brand d-flex align-items-center justify-content-center" href="/index.html">
+                    <span class="d-flex justify-content-center"><img src="assets/images/Navbar/nb_blk.svg"
+                            class="img-fluid navbar-logo" alt=""></span>
+                </a>
+                <div class="d-flex">
+                    <a href="/login.html"><img src="assets/images/Navbar/user.svg" class="img-fluid me-3" alt=""></a>
+                    <a href=""><img src="assets/images/Navbar/cart.svg" class="img-fluid" alt=""></a>
+                </div>
+                <div id="navcol-4" class="collapse navbar-collapse flex-grow-0 mt-2">
+                </div>
+            </div>
+        </nav>
+        <!----------- navbar transparent end----------->
+
+        <!----------- navbar white----------->
+        <nav class="navbar fixed-top navcolor py-3" id="scrolled-navbar">
+            <div class="container-fluid">
+                <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#NavbarOffcanvas"
+                    aria-controls="NavbarOffcanvas">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <img src="assets/images/Navbar/Group1.svg" alt="">
+                </a>
+                <a class="navbar-brand d-flex align-items-center justify-content-center" href="/index.html">
+                    <span class="d-flex justify-content-center text-black"><img src="assets/images/Navbar/nb_blk-dark.svg"
+                            class="img-fluid navbar-logo text-black" alt=""></span>
+                </a>
+                <div class="d-flex">
+                    <a href="/login.html"><img src="assets/images/Navbar/user-dark.svg" class="img-fluid me-3" alt=""></a>
+                    <a href=""><img src="assets/images/Navbar/cart-dark.svg" class="img-fluid" alt=""></a>
+                </div>
+                <div id="navcol-4" class="collapse navbar-collapse flex-grow-0 mt-2">
+                </div>
+            </div>
+        </nav>
+        <!----------- navbar white end----------->
+
+        <!----------- navbar offcanvas----------->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="NavbarOffcanvas"
+            aria-labelledby="offcanvasExampleLabelnavbar">
+            <div class="offcanvas-header d-flex justify-content-end d-block d-sm-none">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="d-flex flex-column justify-content-between" style="height: 100vh;">
+                <div class="">
+                    <div class="mt-5 pt-4 d-flex justify-content-center">
+                        <img src="assets/images/Navbar/nb-gold copy.svg" class="img-fluid" alt="" style="width: 165px;">
+                    </div>
+                    <div class="my-5 py-3 ms-5">
+                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">New
+                            Arrivals</a>
+                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Clothing</a>
+                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shoes</a>
+                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Accessories</a>
+                    </div>
+                    <div class="ms-5">
+                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Made to
+                            Order</a>
+                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Looks
+                            Designer</a>
+                    </div>
+                    <div class="ms-5 mt-5 pt-3">
+                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Book your
+                            Appointment</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="ms-5">
+                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------- navbar offcanvas end----------->
+
+    </div>
+    <!---------------- navbar end ------------------>
+
+
+    <!-- Glamour in the Spotlight start-->
+    <section class="bg-black pt-5 pb-5">
+        <div class="container-fluid pt-5 px-5">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-12 text-md-start text-center">
+                    <h3 class="glamour-spotlight-tital">Glamour in the Spotlight</h3>
+                    <p class="glamour-spotlight-subtital">Experience high fashion, couture elegance, and trendsetting
+                        styles at our exclusive runway showcase</p>
+
+                    <div class="d-flex mt-4">
+                        <button type="button"
+                            class="btn btn-light ticket-booking-btn d-flex align-items-center mb-0 me-3"><img
+                                src="assets/images/ticket-booking/akar-icons_location.svg" class="img-fluid mb-0 me-1"
+                                alt="">BMICH</button>
+                        <form class="ticket-booking-btn">
+                            <input type="date" id="birthday" name="birthday">
+                        </form>
+                    </div>
+
+                </div>
+                <div
+                    class="col-xl-6 col-md-6 col-12 d-flex text-md-start text-center justify-content-md-end justify-content-center align-items-end">
+
+                    <div class="mt-md-0 mt-4">
+                        <h3 class="glamour-spotlight-subtital2 mb-4">You Have Selected 03 Seats</h3>
+                        <div class="d-flex">
+                            <button type="button" class="btn Contact-Careers-banner-btn2 me-3 text-white">03</button>
+                            <button type="button" class="btn btn-light Contact-Careers-banner-btn3">Change</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Glamour in the Spotlight start-->
+
+
+    <!-- ticket booking map start-->
+    <section class="pt-5 px-xxl-5 mx-xl-5 ">
+        <div class="container-fluid">
+            <div class="row text-center mb-5">
+                <h3 class="ticket-booking-map-tital text-uppercase">Seating chart</h3>
+                <p class="ticket-booking-map-subtital mx-auto" style="max-width: 700px;">Experience high fashion, couture elegance, and trendsetting
+                    styles at our exclusive runway showcase</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="assets/images/ticket-booking/Rectangle-332.png" class="img-fluid w-100" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ticket booking map end-->
+
+
+    <!-- ticket booking cards start-->
+    <section class="py-5 my-xl-5 px-xxl-5 mx-xl-5 ">
+
+        <div class="container-fluid" id="ticketbookingbigcards">
+            <div class="row g-0">
+                <div class="col-xl-11 col-md-12 mx-auto">
+                    <div class="row gy-4 gx-4 row-cols-md-4 row-cols-2">
+                        <div class="col">
+                            <div class="card p-xl-3 Ticket-Bookingpaty-card-diamond-plus h-100" onclick="toggleSelection(this, 1)">
+                                <div class="card-body">
+                                    <h5 class="ticket-booking-bigcard-tital">Diamond Plus</h5>
+                                    <p class="ticket-booking-bigcard-subtital">Available <span
+                                            class="badge bg-white text-black ticket-booking-bigcard-subtital">24</span>
+                                    </p>
+                                    <a class="btn btn-dark w-100 mt-xl-5 mt-md-4 d-flex align-items-center justify-content-center Ticket-Bookinggigcard-btn"
+                                   >Select</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card p-xl-3 Ticket-Bookingpaty-card-diamond h-100" onclick="toggleSelection(this, 2)">
+                                <div class="card-body">
+                                    <h5 class="ticket-booking-bigcard-tital">Diamond</h5>
+                                    <p class="ticket-booking-bigcard-subtital">Available <span
+                                            class="badge bg-white text-black ticket-booking-bigcard-subtital">24</span>
+                                    </p>
+                                    <a class="btn btn-dark w-100 mt-xl-5 mt-md-4 d-flex align-items-center justify-content-center Ticket-Bookinggigcard-btn"
+                                      >Select</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card p-xl-3 Ticket-Bookingpaty-card-platinum h-100" onclick="toggleSelection(this, 3)">
+                                <div class="card-body">
+                                    <h5 class="ticket-booking-bigcard-tital">Platinum</h5>
+                                    <p class="ticket-booking-bigcard-subtital">Available <span
+                                            class="badge bg-white text-black ticket-booking-bigcard-subtital">24</span>
+                                    </p>
+                                    <a class="btn btn-dark w-100 mt-xl-5 mt-md-4 d-flex align-items-center justify-content-center Ticket-Bookinggigcard-btn"
+                                        >Select</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card p-xl-3 Ticket-Bookingpaty-card-gold h-100" onclick="toggleSelection(this, 4)">
+                                <div class="card-body">
+                                    <h5 class="ticket-booking-bigcard-tital">Gold</h5>
+                                    <p class="ticket-booking-bigcard-subtital">Available <span
+                                            class="badge bg-white text-black ticket-booking-bigcard-subtital">24</span>
+                                    </p>
+                                    <a class="btn btn-dark w-100 mt-xl-5 mt-md-4 d-flex align-items-center justify-content-center Ticket-Bookinggigcard-btn"
+                                        onclick="showPart(4)">Select</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-5" id="part1" style="display: none;">
+            <div class="row">
+                <h5 class="ticket-booking-smallcard-header mb-0">Pick Your Perfect Sheets</h5>
+            </div>
+            <hr class="mt-2">
+            <div class="row gy-4 gx-4 row-cols-xl-6 row-cols-md-4 row-cols-2 mt-md-5 mt-3">
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-diamond-plus h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Diamond Plus 01</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital1">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#diamondplus">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-diamond-plus h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Diamond Plus 02</h5>
+                            <a href="#" style="margin-top: 59px;"
+                                class="btn btn-dark Ticket-Booking-sold-out-btn w-100 d-flex align-items-center justify-content-center">SOLD
+                                OUT</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-diamond-plus h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Diamond Plus 03</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#diamondplus">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-diamond-plus h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Diamond Plus 04</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#diamondplus">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-diamond-plus h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Diamond Plus 05</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#diamondplus">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-diamond-plus h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Diamond Plus 06</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#diamondplus">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid  mt-5" id="part2" style="display: none;">
+            <div class="row">
+                <h5 class="ticket-booking-smallcard-header mb-0">Pick Your Perfect Sheets</h5>
+            </div>
+            <hr class="mt-2">
+            <div class="row gy-4 gx-4 row-cols-xl-6 row-cols-md-4 row-cols-2 mt-md-5 mt-3">
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-diamond h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Diamond 01</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#diamond">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-diamond h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Diamond 02</h5>
+                            <a href="#" style="margin-top: 59px;"
+                                class="btn btn-dark Ticket-Booking-sold-out-btn w-100 d-flex align-items-center justify-content-center">SOLD
+                                OUT</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-diamond h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Diamond 03</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#diamond">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-diamond h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Diamond 04</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#diamond">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-diamond h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Diamond 05</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#diamond">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-diamond h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Diamond 06</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#diamond">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid  mt-5" id="part3" style="display: none;">
+            <div class="row">
+                <h5 class="ticket-booking-smallcard-header mb-0">Pick Your Perfect Sheets</h5>
+            </div>
+            <hr class="mt-2">
+            <div class="row gy-4 gx-4 row-cols-xl-6 row-cols-md-4 row-cols-2 mt-md-5 mt-3">
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-platinum h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Platinum 01</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#platinum">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-platinum h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Platinum 02</h5>
+                            <a href="#" style="margin-top: 59px;"
+                                class="btn btn-dark Ticket-Booking-sold-out-btn w-100 d-flex align-items-center justify-content-center">SOLD
+                                OUT</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-platinum h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Platinum 03</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#platinum">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-platinum h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Platinum 04</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#platinum">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-platinum h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Platinum 05</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#platinum">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-platinum h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Platinum 06</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#platinum">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid  mt-5" id="part4" style="display: none;">
+            <div class="row">
+                <h5 class="ticket-booking-smallcard-header mb-0">Pick Your Perfect Sheets</h5>
+            </div>
+            <hr class="mt-2">
+            <div class="row gy-4 gx-4 row-cols-xl-6 row-cols-md-4 row-cols-2 mt-md-5 mt-3">
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-gold h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Gold 01</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#gold">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-gold h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Gold 02</h5>
+
+                            <a href="#" style="margin-top: 59px;"
+                                class="btn btn-dark Ticket-Booking-sold-out-btn w-100 d-flex align-items-center justify-content-center">SOLD
+                                OUT</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-gold h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Gold 03</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#gold">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-gold h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Gold 04</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#gold">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-gold h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Gold 05</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#gold">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card Ticket-Bookingpaty-card-gold h-100">
+                        <div class="card-body">
+                            <h5 class="ticket-booking-smallcard-tital">Gold 06</h5>
+                            <p class="ticket-booking-smallcard-subtital">Available <span
+                                    class="badge bg-white text-black ticket-booking-smallcard-subtital">24</span></p>
+                            <a href="#"
+                                class="btn btn-dark Ticket-Bookingsmallcard-btn w-100 mt-4 d-flex align-items-center justify-content-center"
+                                data-bs-toggle="modal" data-bs-target="#gold">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Button trigger modal start-->
+        <div class="dev-modals">
+
+            <!-- Diamond Plus Modal start-->
+            <div class="modal fade" id="diamondplus" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="diamondplusLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header border-0">
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center border-0">
+                            <div class="d-flex justify-content-center">
+                                <div class="ticket-booking-modal-width">
+                                    <h1 class="ticket-booking-modal-tital1">Book Your Seats&nbsp;<span
+                                            class="ticket-booking-modal-tital2 ps-2 text-uppercase border-start border-2 border-black">Book
+                                            Your Seats</span>
+                                    </h1>
+                                    <p class="ticket-booking-modal-subtital mb-0">Experience high fashion, couture
+                                        elegance,
+                                        and
+                                        trendsetting styles at our exclusive runway showcase</p>
+                                </div>
+                            </div>
+
+                            <div class="row gy-3 my-5 mx-auto" style="max-width: 75%;">
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage1" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage2" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage3" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage4" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage5" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage6" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage7" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-0 rounded-0" style="background-color: #000000BF;">
+                            <div class="row w-100">
+                                <div class="col-md-6  py-md-2 py-0 pb-md-2 pb-3 d-flex justify-content-md-start justify-content-center align-items-center">
+                                    <div class=" py-1 pe-md-4 pe-3 border-end ">
+                                        <h3 class="ticket-booking-modal-footer-text mb-0 ">04 Sheets</h3>
+                                    </div>
+                                    <div class="py-1 ms-2 border-left border-dark">
+                                        <h3 class="ticket-booking-modal-footer-text mb-0">LKRS 2400.00</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-md-end justify-content-center justify-content-end align-items-center">
+                                    <a href="/ticket-booking-payment-proceed.html"><button 
+                                        class="btn btn-light Ticket-Bookingpatycard-btn d-flex align-items-center justify-content-center">Confirm</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Diamond Plus Modal end-->
+
+            <!-- Diamond Modal start-->
+            <div class="modal fade" id="diamond" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="diamondLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header border-0">
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center border-0">
+                            <div class="d-flex justify-content-center">
+                                <div class="ticket-booking-modal-width">
+                                    <h1 class="ticket-booking-modal-tital1">Book Your Seats&nbsp;<span
+                                            class="ticket-booking-modal-tital2 ps-2 text-uppercase border-start border-2 border-black">Book
+                                            Your Seats</span>
+                                    </h1>
+                                    <p class="ticket-booking-modal-subtital mb-0">Experience high fashion, couture
+                                        elegance,
+                                        and
+                                        trendsetting styles at our exclusive runway showcase</p>
+                                </div>
+                            </div>
+
+                            <div class="row gy-3 my-5 mx-auto" style="max-width: 75%;">
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage8" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage9" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage10" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage11" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage12" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage13" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage14" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-0 rounded-0" style="background-color: #000000BF;">
+                            <div class="row w-100">
+                                <div class="col-md-6  py-md-2 py-0 pb-md-2 pb-3 d-flex justify-content-md-start justify-content-center align-items-center">
+                                    <div class=" py-1 pe-md-4 pe-3 border-end ">
+                                        <h3 class="ticket-booking-modal-footer-text mb-0 ">04 Sheets</h3>
+                                    </div>
+                                    <div class="py-1 ms-2 border-left border-dark">
+                                        <h3 class="ticket-booking-modal-footer-text mb-0">LKRS 2400.00</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-md-end justify-content-center justify-content-end align-items-center">
+                                    <a href="/ticket-booking-payment-proceed.html"><button 
+                                        class="btn btn-light Ticket-Bookingpatycard-btn d-flex align-items-center justify-content-center">Confirm</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Diamond Modal end-->
+
+            <!-- Platinum Modal start-->
+            <div class="modal fade" id="platinum" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="platinum" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header border-0">
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center border-0">
+                            <div class="d-flex justify-content-center">
+                                <div class="ticket-booking-modal-width">
+                                    <h1 class="ticket-booking-modal-tital1">Book Your Seats&nbsp;<span
+                                            class="ticket-booking-modal-tital2 ps-2 text-uppercase border-start border-2 border-black">Book
+                                            Your Seats</span>
+                                    </h1>
+                                    <p class="ticket-booking-modal-subtital mb-0">Experience high fashion, couture
+                                        elegance,
+                                        and
+                                        trendsetting styles at our exclusive runway showcase</p>
+                                </div>
+                            </div>
+
+                            <div class="row gy-3 my-5 mx-auto" style="max-width: 75%;">
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage15" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage16" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage17" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage18" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage19" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage20" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage21" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-0 rounded-0" style="background-color: #000000BF;">
+                            <div class="row w-100">
+                                <div class="col-md-6  py-md-2 py-0 pb-md-2 pb-3 d-flex justify-content-md-start justify-content-center align-items-center">
+                                    <div class=" py-1 pe-md-4 pe-3 border-end ">
+                                        <h3 class="ticket-booking-modal-footer-text mb-0 ">04 Sheets</h3>
+                                    </div>
+                                    <div class="py-1 ms-2 border-left border-dark">
+                                        <h3 class="ticket-booking-modal-footer-text mb-0">LKRS 2400.00</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-md-end justify-content-center justify-content-end align-items-center">
+                                    <a href="/ticket-booking-payment-proceed.html"><button 
+                                        class="btn btn-light Ticket-Bookingpatycard-btn d-flex align-items-center justify-content-center">Confirm</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Platinum Modal end-->
+
+            <!-- Gold Modal start-->
+            <div class="modal fade" id="gold" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="platinum" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header border-0">
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center border-0">
+                            <div class="d-flex justify-content-center">
+                                <div class="ticket-booking-modal-width">
+                                    <h1 class="ticket-booking-modal-tital1">Book Your Seats&nbsp;<span
+                                            class="ticket-booking-modal-tital2 ps-2 text-uppercase border-start border-2 border-black">Book
+                                            Your Seats</span>
+                                    </h1>
+                                    <p class="ticket-booking-modal-subtital mb-0">Experience high fashion, couture
+                                        elegance,
+                                        and
+                                        trendsetting styles at our exclusive runway showcase</p>
+                                </div>
+                            </div>
+
+                            <div class="row gy-3 my-5 mx-auto" style="max-width: 75%;">
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage22" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage23" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage24" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage25" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage26" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage27" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md col-3 mt-md-0">
+                                    <img id="myImage28" src="assets/images/ticket-booking/Sheet.svg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-0 rounded-0" style="background-color: #000000BF;">
+                            <div class="row w-100">
+                                <div class="col-md-6  py-md-2 py-0 pb-md-2 pb-3 d-flex justify-content-md-start justify-content-center align-items-center">
+                                    <div class=" py-1 pe-md-4 pe-3 border-end ">
+                                        <h3 class="ticket-booking-modal-footer-text mb-0 ">04 Sheets</h3>
+                                    </div>
+                                    <div class="py-1 ms-2 border-left border-dark">
+                                        <h3 class="ticket-booking-modal-footer-text mb-0">LKRS 2400.00</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-md-end justify-content-center justify-content-end align-items-center">
+                                    <a href="/ticket-booking-payment-proceed.html"><button 
+                                        class="btn btn-light Ticket-Bookingpatycard-btn d-flex align-items-center justify-content-center">Confirm</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Gold Modal end-->
+
+        </div>
+        <!-- Button trigger modal end-->
+
+    </section>
+    <!-- ticket booking cards end-->
+
+
+    <!-- PROCEED  start-->
+    <section class="bg-black border-bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-8 py-md-2 py-3 text-white d-flex align-items-center">
+                    <div class=" py-1 pe-md-4 pe-3 border-end">
+                        <h3 class="ticket-booking-price-bar mb-0 ">04 Sheets</h3>
+                    </div>
+                    <div class="py-1 ms-2 border-left border-dark">
+                        <h3 class="ticket-booking-price-bar mb-0">LKRS 2400.00</h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-4 d-flex justify-content-end align-items-center">
+                    <a href="/ticket-booking-payment-proceed.html"><button
+                        class="btn btn-light Ticket-Bookingpatycard-btn d-flex align-items-center justify-content-center">PROCEED</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROCEED  end-->
+
+
+    <!-- Back to top button start -->
+    <section class="">
+        <div class="container-fluid">
+            <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+                <img src="assets/images/ScrollTop.svg" class="img-fluid" alt="" id="scrollTopWhite">
+                <img src="assets/images/ScrollTop-black.svg" class="img-fluid" alt="" id="scrollTopBlack">
+            </button>
+            <button type="button" class="btn btn-input chat-buttion">
+                <i class="fa-solid fa-message" style="color: #ffffff;"></i>
+            </button>
+        </div>
+    </section>
+    <!-- Back to top button start -->
+
+
+    <!-- Footer Start-->
+    <div class="div-footer">
+
+        <!-- footer desktop start-->
+        <footer class="text-white bg-black d-none d-xl-block" id="footer">
+            <div class="container-fluid px-md-5 px-3 pt-5 pb-3">
+                <div class="row justify-content-center mt-4">
+                    <div
+                        class="col-md-4 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start  item social">
+                        <p class="mb-0 footer-header">Contact </p>
+                        <ul class="list-unstyled">
+
+                            <li class="mt-2"><a class="link footer-list" href="#">WhatsApp: +94 655 110 516</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Call: +94443289234</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Email: service@nb.lk</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-2 text-center text-lg-start d-flex flex-column item">
+                        <p class="mb-0 footer-header">Contact </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-2"><a class="link footer-list" href="#">Shop By</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Suits</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Jackets & Blazers</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Trousers</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Suits</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Coats</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 text-center text-lg-start d-flex flex-column item">
+                        <p class="mb-0 footer-header">Support </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-2"><a class="link footer-list" href="#">Shipping & Delivery</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Returns & Exchanges</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Perfect Fit Guides</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">FAQ</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-2 text-center text-lg-start d-flex flex-column item">
+                        <p class="mb-0 footer-header">Services </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-2"><a class="link footer-list" href="#">Plan Your Visit</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Custom Made</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Alterations</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Size Passport</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Gift Cards</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-md-2 text-center text-lg-start d-flex flex-column item">
+                        <p class="mb-0 footer-header">About </p>
+                        <ul class="list-unstyled">
+                            <li class="mt-2"><a class="link footer-list" href="#">Store Experience</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Our Story</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Press</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Sustainability</a></li>
+                            <li class="mt-2"><a class="link footer-list" href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <h6 class="mb-0 copyright-text">Namal Balachandra - Sri Lanka (LK) | All Rights Reserved.</h6>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <a href=""><img src="assets/images/footer/FB_icon-icons.svg" class="img-fluid px-2" alt=""></a>
+                            <a href=""><img src="assets/images/footer/TWITTER_icon-icons.svg" class="img-fluid px-2" alt=""></a>
+                            <a href=""><img src="assets/images/footer/instagram_filled_icon.svg" class="img-fluid px-2"
+                                    alt=""></a>
+                            <a href=""><img src="/images/footer/YOUTUBE_icon-icons.svg" class="img-fluid px-2" alt=""></a>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center">
+                            <a class="me-4 copyright-text" href="">Secure payments</a>
+                            <a href=""><img src="assets/images/footer/Page-1.svg" class="img-fluid me-3" alt=""></a>
+                            <a href=""><img src="assets/images/footer/Page-1(1).svg" class="img-fluid me-3" alt=""></a>
+                            <a href=""><img src="assets/images/footer/Page-1(2).svg" class="img-fluid me-3" alt=""></a>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center justify-content-end">
+                            <a class="me-4 copyright-text" href="">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer desktop end-->
+        <!-- footer mobile  start-->
+        <footer class="text-white bg-black d-block d-xl-none" id="footer">
+            <div class="container-fluid px-md-5 px-3 pb-3">
+                <div class="row justify-content-center pt-4">
+                    <div
+                        class="col-md-6 col-12 text-center  text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start  item social">
+                        <div class="accordion accordion-flush bg-black w-100" id="accordionFlushExample">
+                            <div class="accordion-item bg-black border-0">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button border-0 collapsed bg-black text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Contact Us
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse  collapse text-white"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class=" footer-list" href="#">WhatsApp: +94 655 110 516</a>
+                                            </li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Call: +94443289234</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Mail: service@nb.lk</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-black border-0">
+                                <h2 class="accordion-header border-0" id="flush-heading2">
+                                    <button class="accordion-button border-0 collapsed bg-black text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false"
+                                        aria-controls="flush-collapse2">
+                                        Services
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse2" class="accordion-collapse collapse text-white"
+                                    aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body border-0 py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class="footer-list" href="#">Shop By</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Suits</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Jackets & Blazers</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Trousers</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Suits</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Coats</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-black border-0">
+                                <h2 class="accordion-header border-0" id="flush-heading3">
+                                    <button class="accordion-button collapsed bg-black text-white border-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false"
+                                        aria-controls="flush-collapse3">
+                                        Support
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse3" class="accordion-collapse collapse text-white"
+                                    aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body border-0 py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class="footer-list" href="#">Shipping & Delivery</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Returns & Exchanges</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Perfect Fit Guides</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">FAQ</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Accessibility</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 text-center text-lg-start d-flex flex-column item">
+                        <div class="accordion accordion-flush bg-black w-100" id="accordionFlushExample2">
+                            <div class="accordion-item bg-black border-0">
+                                <h2 class="accordion-header border-0" id="flush-heading4">
+                                    <button class="accordion-button border-0 collapsed bg-black text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false"
+                                        aria-controls="flush-collapse4">
+                                        Services
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse4" class="accordion-collapse collapse text-white"
+                                    aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample2">
+                                    <div class="accordion-body border-0 py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class="footer-list" href="#">Shop By</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Suits</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Jackets & Blazers</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Trousers</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Suits</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Coats</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-black border-0">
+                                <h2 class="accordion-header border-0" id="flush-heading5">
+                                    <button class="accordion-button collapsed bg-black text-white border-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false"
+                                        aria-controls="flush-collapse5">
+                                        Support
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse5" class="accordion-collapse collapse text-white"
+                                    aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample2">
+                                    <div class="accordion-body border-0 py-0">
+                                        <ul class="list-unstyled text-start">
+                                            <li class="mt-2"><a class="footer-list" href="#">Shipping & Delivery</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Returns & Exchanges</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Perfect Fit Guides</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">FAQ</a></li>
+                                            <li class="mt-2"><a class="footer-list" href="#">Accessibility</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ms-2 pb-3 mt-mb-0 mt-4">
+                    <div class="col-md-12 mt-2">
+                        <a class="copyright-text" href="">Secure payments</a>
+                    </div>
+                    <div class="col-md-12 align-items-center mt-3">
+                        <a href=""><img src="assets/images/footer/Page-1.svg" class="img-fluid me-3" alt=""></a>
+                        <a href=""><img src="assets/images/footer/Page-1(1).svg" class="img-fluid me-3" alt=""></a>
+                        <a href=""><img src="assets/images/footer/Page-1(2).svg" class="img-fluid me-3" alt=""></a>
+                    </div>
+
+                    <div class="col-md-12 d-flex align-items-center mt-3">
+                        <a class="copyright-text" href="">Terms & Conditions</a>
+                    </div>
+                </div>
+                <hr />
+                <div class="">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-12 d-none d-sm-block">
+                            <h6 class="mb-0 copyright-text">Namal Balachandra - Sri Lanka (LK) | All Rights Reserved.</h6>
+                        </div>
+                        <div
+                            class="col-md-6 col-12 d-flex align-items-center justify-content-md-end justify-content-center">
+                            <a href=""><img src="assets/images/footer/FB_icon-icons.svg" class="img-fluid px-2" alt=""></a>
+                            <a href=""><img src="assets/images/footer/TWITTER_icon-icons.svg" class="img-fluid px-2" alt=""></a>
+                            <a href=""><img src="assets/images/footer/instagram_filled_icon.svg" class="img-fluid px-2"
+                                    alt=""></a>
+                            <a href=""><img src="assets/images/footer/YOUTUBE_icon-icons.svg" class="img-fluid px-2" alt=""></a>
+                        </div>
+                        <div
+                            class="col-md-6 mt-mb-0 mt-3 col-12 d-block d-sm-none mt-2 px-5 justify-content-md-end justify-content-center text-md-start text-center">
+                            <h6 class="mb-0 copyright-text">Namal Balachandra - Sri Lanka (LK) | All Rights Reserved.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer mobile end-->
+
+    </div>
+    <!-- Footer End-->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Get references to the images
+          var imageElements = [];
+      
+          for (var i = 1; i <= 100; i++) {
+            var imageId = 'myImage' + i;
+            var image = document.getElementById(imageId);
+            imageElements.push(image);
+          }
+      
+          // Set image sources
+          var firstImageSource = '/assets/images/ticket-booking/Sheet(1).svg';
+          var secondImageSource = 'assets/images/ticket-booking/Sheet.svg';
+      
+          // Variable to keep track of the number of clicks
+          var clickCount = 0;
+      
+          // Function to change the image for a specific image element
+          function changeImage(imageElement) {
+            // Update the source of the image based on the click count
+            if (clickCount % 2 === 0) {
+              imageElement.src = firstImageSource;
+            } else {
+              imageElement.src = secondImageSource;
+            }
+      
+            // Increment the click count
+            clickCount++;
+          }
+      
+          // Add a click event listener to each image
+          for (var i = 0; i < imageElements.length; i++) {
+            imageElements[i].addEventListener('click', function () {
+              changeImage(this);
+            });
+          }
+        });
+    </script>   
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Get references to the images
+          var imageElements = [];
+      
+          for (var i = 1; i <= 100; i++) {
+            var imageId = 'myImage' + i;
+            var image = document.getElementById(imageId);
+            imageElements.push(image);
+          }
+      
+          // Set a single image source for all elements
+          var commonImageSource = '/assets/images/ticket-booking/Sheet(1).svg';
+      
+          // Function to change the image for a specific image element
+          function changeImage(imageElement) {
+            // Update the source of the image
+            imageElement.src = commonImageSource;
+          }
+      
+          // Add a click event listener to each image
+          for (var i = 0; i < imageElements.length; i++) {
+            imageElements[i].addEventListener('click', function () {
+              changeImage(this);
+            });
+          }
+        });
+    </script> -->
+      
+    <script>
+        let selectedCard = null;
+    
+        function toggleSelection(card, partNumber) {
+            if (selectedCard) {
+                selectedCard.classList.remove('selected');
+            }
+            card.classList.add('selected');
+            selectedCard = card;
+    
+            showPart(partNumber);
+        }
+    
+        function showPart(partNumber) {
+            for (let i = 1; i <= 4; i++) {
+                const part = document.getElementById('part' + i);
+                if (i === partNumber) {
+                    part.style.display = 'block';
+                } else {
+                    part.style.display = 'none';
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- script -->
+</body>
+
+</html>
