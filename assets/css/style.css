@@ -1930,7 +1930,7 @@ a.new-item-hadder-text:hover {
 	 font-size: 16px;
 }
  a.nav-link.tabe-underline.active.border-0 {
-	 background-color: #efefef;
+	 background-color: #646464;
 	 font-weight: 500;
 	 font-size: 16px;
 }
@@ -1962,8 +1962,16 @@ a.new-item-hadder-text:hover {
  .tabbable .nav-tabs .nav-link {
 	 white-space: nowrap;
 }
+
+
+#sizecalculator2 .table{
+	--bs-table-bg: #646464;
+}
+
+
+
 .product-configurator-background-color{
-	background-color: #EFEFEF;
+	background-color: #646464;
 }
  .Select-fabric-scrollbar::-webkit-scrollbar {
 	 display: none;
