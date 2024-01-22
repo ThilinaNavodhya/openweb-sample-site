@@ -55,84 +55,113 @@
 <body>
 
 
-    <!------------------- navbar --------------->
+    <!---------------- navbar start ----------------->
     <div class="div-nav">
 
-        <!----------------main navbar start----------->
-        <nav class="navbar fixed-top py-3" id="navbar1">
+        <!----------- navbar transparent  ----------->
+        <nav class="navbar fixed-top navcolor py-3" id="original-navbar">
             <div class="container-fluid">
-                <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExamplenavbar"
-                    aria-controls="offcanvasExamplenavbar">
+                <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#NavbarOffcanvas"
+                    aria-controls="NavbarOffcanvas">
                     <span class="visually-hidden">Toggle navigation</span>
                     <img src="assets/images/Navbar/Group1.svg" alt="">
                 </a>
                 <a class="navbar-brand d-flex align-items-center justify-content-center" href="/index.html">
-                    <span class="d-flex justify-content-center text-black"><img src="assets/images/Navbar/nb_blk-dark.svg"
-                            class="img-fluid navbar-logo text-black" alt=""></span>
+                    <span class="d-flex justify-content-center text-black"><img
+                            src="assets/images/Navbar/openweb-logo-3740A4FC5E-seeklogo.com.png" class="img-fluid navbar-logo text-black"
+                            alt=""></span>
                 </a>
                 <div class="d-flex">
-                    <a href="/login.html"><img src="assets/images/Navbar/user-dark.svg" class="img-fluid me-3" alt=""></a>
+                    <a href="/login.html"><img src="assets/images/Navbar/user-dark.svg" class="img-fluid me-3"
+                            alt=""></a>
                     <a href=""><img src="assets/images/Navbar/cart-dark.svg" class="img-fluid" alt=""></a>
                 </div>
                 <div id="navcol-4" class="collapse navbar-collapse flex-grow-0 mt-2">
-
                 </div>
             </div>
         </nav>
-        <!----------------main navbar end----------->
+        <!----------- navbar transparent end----------->
+
+        <!----------- navbar white----------->
+        <nav class="navbar fixed-top navcolor py-3" id="scrolled-navbar">
+            <div class="container-fluid">
+                <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#NavbarOffcanvas"
+                    aria-controls="NavbarOffcanvas">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <img src="assets/images/Navbar/Group1.svg" alt="">
+                </a>
+                <a class="navbar-brand d-flex align-items-center justify-content-center" href="/index.html">
+                    <span class="d-flex justify-content-center text-black"><img
+                            src="assets/images/Navbar/openweb-logo-3740A4FC5E-seeklogo.com.png" class="img-fluid navbar-logo text-black"
+                            alt=""></span>
+                </a>
+                <div class="d-flex">
+                    <a href="/login.html"><img src="assets/images/Navbar/user-dark.svg" class="img-fluid me-3"
+                            alt=""></a>
+                    <a href=""><img src="assets/images/Navbar/cart-dark.svg" class="img-fluid" alt=""></a>
+                </div>
+                <div id="navcol-4" class="collapse navbar-collapse flex-grow-0 mt-2">
+                </div>
+            </div>
+        </nav>
+        <!----------- navbar white end----------->
 
         <!----------- navbar offcanvas----------->
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExamplenavbar"
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="NavbarOffcanvas"
             aria-labelledby="offcanvasExampleLabelnavbar">
             <div class="offcanvas-header d-flex justify-content-end d-block d-sm-none">
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
             </div>
-            <div class="d-flex flex-column justify-content-between" style="height: 100vh;">
-                <div class="">
-                    <div class="mt-5 pt-4 d-flex justify-content-center">
-                        <img src="assets/images/Navbar/nb-gold copy.svg" class="img-fluid" alt="" style="width: 165px;">
+            <div id="navbarOffcanvaspage1">
+            <div  class="d-flex flex-column justify-content-between overflow-y-scroll Select-fabric-scrollbar" style="height: 90vh;">
+                <div>
+                    <div class="mt-4 mb-4 d-flex justify-content-center">
+
+                        <img src="assets/images/Navbar/openweb-logo-3740A4FC5E-seeklogo.com.png" class="img-fluid" alt="" style="width: 165px;">
                     </div>
-
-
-                    <div class="my-5 py-3 ms-5">
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">New
-                            Arrivals</a>
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Clothing</a>
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shoes</a>
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Accessories</a>
+                    <div>
+                    <div class="my-3 py-3 ms-5">
+                        <a href="/new-arrivals.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">New Arrivals</a>
+                        <a href="/gift-voucher.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Gift Vucher</a>
+                            <a href="/ticket-booking.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Ticket Booking</a>
                     </div>
-
                     <div class="ms-5">
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Made to
-                            Order</a>
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Looks
+                        <a href="/product-configurator-suit.html"
+                                class="list-group-item list-group-item-action navbar-offcanvas mb-2">Bestsellers</a>
+                            <a href="/product-configurator.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Product Configurator</a>
+                            <a href="/new-arrivals.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shirts</a>
+                            <a href="/product-configurator-waist-coat.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shoes</a>
+            
+                            <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Looks
                             Designer</a>
-
                     </div>
-
-                    <div class="ms-5 mt-5 pt-3">
+                    <div class="ms-5 mt-3 pt-3">
                         <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Book your
                             Appointment</a>
                     </div>
-
-
-
                 </div>
-
+                </div>
                 <div>
                     <div class="ms-5">
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">About</a>
+                        <a href="/contact-us.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Contact Us</a>
+                        <a href="/about-us.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">About</a>
                     </div>
-                </div>
-
-
+                
             </div>
+            </div>
+        </div>
+            
         </div>
         <!----------- navbar offcanvas end----------->
 
     </div>
-    <!------------------- navbar end--------------->
+    <!---------------- navbar end ------------------>
     
     <!---------------- Gift Voucher page one start----------->
     <div id="giftVoucher1">

@@ -55,84 +55,113 @@
 <body>
 
 
-    <!------------------- navbar --------------->
+    <!---------------- navbar start ----------------->
     <div class="div-nav">
 
-        <!----------------main navbar start----------->
-        <nav class="navbar fixed-top py-3" id="navbar1">
+        <!----------- navbar transparent  ----------->
+        <nav class="navbar fixed-top navcolor py-3" id="original-navbar">
             <div class="container-fluid">
-                <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExamplenavbar"
-                    aria-controls="offcanvasExamplenavbar">
+                <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#NavbarOffcanvas"
+                    aria-controls="NavbarOffcanvas">
                     <span class="visually-hidden">Toggle navigation</span>
                     <img src="assets/images/Navbar/Group1.svg" alt="">
                 </a>
                 <a class="navbar-brand d-flex align-items-center justify-content-center" href="/index.html">
-                    <span class="d-flex justify-content-center text-black"><img src="assets/images/Navbar/nb_blk-dark.svg"
-                            class="img-fluid navbar-logo text-black" alt=""></span>
+                    <span class="d-flex justify-content-center text-black"><img
+                            src="assets/images/Navbar/openweb-logo-3740A4FC5E-seeklogo.com.png" class="img-fluid navbar-logo text-black"
+                            alt=""></span>
                 </a>
                 <div class="d-flex">
-                    <a href="/login.html"><img src="assets/images/Navbar/user-dark.svg" class="img-fluid me-3" alt=""></a>
+                    <a href="/login.html"><img src="assets/images/Navbar/user-dark.svg" class="img-fluid me-3"
+                            alt=""></a>
                     <a href=""><img src="assets/images/Navbar/cart-dark.svg" class="img-fluid" alt=""></a>
                 </div>
                 <div id="navcol-4" class="collapse navbar-collapse flex-grow-0 mt-2">
-
                 </div>
             </div>
         </nav>
-        <!----------------main navbar end----------->
+        <!----------- navbar transparent end----------->
+
+        <!----------- navbar white----------->
+        <nav class="navbar fixed-top navcolor py-3" id="scrolled-navbar">
+            <div class="container-fluid">
+                <a class="p-2 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#NavbarOffcanvas"
+                    aria-controls="NavbarOffcanvas">
+                    <span class="visually-hidden">Toggle navigation</span>
+                    <img src="assets/images/Navbar/Group1.svg" alt="">
+                </a>
+                <a class="navbar-brand d-flex align-items-center justify-content-center" href="/index.html">
+                    <span class="d-flex justify-content-center text-black"><img
+                            src="assets/images/Navbar/openweb-logo-3740A4FC5E-seeklogo.com.png" class="img-fluid navbar-logo text-black"
+                            alt=""></span>
+                </a>
+                <div class="d-flex">
+                    <a href="/login.html"><img src="assets/images/Navbar/user-dark.svg" class="img-fluid me-3"
+                            alt=""></a>
+                    <a href=""><img src="assets/images/Navbar/cart-dark.svg" class="img-fluid" alt=""></a>
+                </div>
+                <div id="navcol-4" class="collapse navbar-collapse flex-grow-0 mt-2">
+                </div>
+            </div>
+        </nav>
+        <!----------- navbar white end----------->
 
         <!----------- navbar offcanvas----------->
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExamplenavbar"
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="NavbarOffcanvas"
             aria-labelledby="offcanvasExampleLabelnavbar">
             <div class="offcanvas-header d-flex justify-content-end d-block d-sm-none">
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
             </div>
-            <div class="d-flex flex-column justify-content-between" style="height: 100vh;">
-                <div class="">
-                    <div class="mt-5 pt-4 d-flex justify-content-center">
-                        <img src="assets/images/Navbar/nb-gold copy.svg" class="img-fluid" alt="" style="width: 165px;">
+            <div id="navbarOffcanvaspage1">
+            <div  class="d-flex flex-column justify-content-between overflow-y-scroll Select-fabric-scrollbar" style="height: 90vh;">
+                <div>
+                    <div class="mt-4 mb-4 d-flex justify-content-center">
+
+                        <img src="assets/images/Navbar/openweb-logo-3740A4FC5E-seeklogo.com.png" class="img-fluid" alt="" style="width: 165px;">
                     </div>
-
-
-                    <div class="my-5 py-3 ms-5">
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">New
-                            Arrivals</a>
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Clothing</a>
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shoes</a>
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Accessories</a>
+                    <div>
+                    <div class="my-3 py-3 ms-5">
+                        <a href="/new-arrivals.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">New Arrivals</a>
+                        <a href="/gift-voucher.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Gift Vucher</a>
+                            <a href="/ticket-booking.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Ticket Booking</a>
                     </div>
-
                     <div class="ms-5">
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Made to
-                            Order</a>
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Looks
+                        <a href="/product-configurator-suit.html"
+                                class="list-group-item list-group-item-action navbar-offcanvas mb-2">Bestsellers</a>
+                            <a href="/product-configurator.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Product Configurator</a>
+                            <a href="/new-arrivals.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shirts</a>
+                            <a href="/product-configurator-waist-coat.html" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Shoes</a>
+            
+                            <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Looks
                             Designer</a>
-
                     </div>
-
-                    <div class="ms-5 mt-5 pt-3">
+                    <div class="ms-5 mt-3 pt-3">
                         <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">Book your
                             Appointment</a>
                     </div>
-
-
-
                 </div>
-
+                </div>
                 <div>
                     <div class="ms-5">
-                        <a href="#" class="list-group-item list-group-item-action navbar-offcanvas mb-2">About</a>
+                        <a href="/contact-us.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">Contact Us</a>
+                        <a href="/about-us.html"
+                            class="list-group-item list-group-item-action navbar-offcanvas mb-2">About</a>
                     </div>
-                </div>
-
-
+                
             </div>
+            </div>
+        </div>
+            
         </div>
         <!----------- navbar offcanvas end----------->
 
     </div>
-    <!------------------- navbar end--------------->
+    <!---------------- navbar end ------------------>
     
     
     <!---------------- Gift Voucher page two start----------->
@@ -147,18 +176,16 @@
                                 <div class="col">
                                     <div class="text-center mx-auto" style="max-width: 790px;">
                                         <h3 class="gift-voucher-tital text-uppercase mb-0 mx-auto">
-                                            A precious gift 
-                                            for your beloved ones
+                                            A valuable gift for your loved ones
                                         </h3>
                                         
-                                        <h5 class="gift-voucher-pagetwo-subtital py-md-5 py-4">Step back in time with our captivating events, where vintage meets modern. 
-                                            Explore the past while embracing future fashion trends. </h5>
+                                        <h5 class="gift-voucher-pagetwo-subtital py-md-5 py-4">Go back in time with its fascinating events: vintage meets modern. Explore the past while embracing future fashion trends. </h5>
                                     </div>
 
                                     <div class="text-center mt-4 mx-auto" style="max-width: 600px;">
-                                        <h5 class="gift-voucher-pagetwo-subtital2 text-uppercase mb-3">Seat booking is only through our website</h5>
-                                       <p class="gift-voucher-pagetwo-subtital3 mb-0">Mireka Tower entrance gates opening hours 5.30 PM to 6.30 PM</p>
-                                      <p class="gift-voucher-pagetwo-subtital4">Please note that entry is not possible after 6.30 PM for security reasons</p>
+                                        <h5 class="gift-voucher-pagetwo-subtital2 text-uppercase mb-3">SEAT RESERVATIONS ARE MADE ONLY THROUGH OUR WEBSITE</h5>
+                                       <p class="gift-voucher-pagetwo-subtital3 mb-0">Mireka Tower entrance gates opening hours 7.30 PM to 8.30 PM</p>
+                                      <p class="gift-voucher-pagetwo-subtital4">Please note that entry is not possible after 5.30 PM for security reasons</p>
                                     </div>
                                 </div>
                             </div>
@@ -178,50 +205,12 @@
                 <div class="col-xxl-11 col-xl-12 mx-auto">
 
                     <div class="row g-3 row-cols-1 row-cols-md-2 row-cols-xl-4">
-                       
-                         <div class="col">
-                            <div class="card h-100 border-0 gift-voucher-diamond-plus-color">
-                                <div class="card-body d-flex flex-column justify-content-between p-4">
-                                    <div class="p-md-2">
-                                        <h6 class="gift-voucher-card-category-tital1">Diamond Plus</h6>
-                                        <h4 class="gift-voucher-card-category-tita2 mb-0">LKR 300,000</h4>
-        
-                                        <span class="badge News-and-Events-badge mb-3">Viza / Master / Amex </span>
-        
-                                        <h6 class="mb-4 gift-voucher-card-category-subtital">Book now and get 
-                                            "QK FASHION SHOW 2024" tickets and offers below</h6>
-                                        <ul class="list-unstyled">
-                                            <li class="d-flex mb-2">
-                                                <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
-                                                    <img src="assets/images/News-and-Events/Type3.svg" class="img-fluid" alt="">
-                                                </span>
-                                                <p class="gift-voucher-card-card-list-text mb-0">Unlimited Updates & Projects</p>
-                                            </li>
-        
-                                            <li class="d-flex mb-2">
-                                                <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
-                                                    <img src="assets/images/News-and-Events/Type3.svg" class="img-fluid" alt="">
-                                                </span>
-                                                <p class="gift-voucher-card-card-list-text mb-0">Custom Permissions</p>
-                                            </li>
-        
-                                            
-        
-                                        </ul>
-                                        <button type="button" class="btn btn-dark News-and-Events-card-buttion mb-0 mt-2" data-bs-toggle="modal" data-bs-target="#giftVoucherModal">Book
-                                            Now<i class="fa-solid  mb-0 fa-arrow-right ms-2"></i></button>
-                                    </div>
-        
-                                </div>
-                            </div>
-                        </div> 
-
                         <div class="col">
-                            <div class="card h-100 border-0 gift-voucher-diamond-color">
+                            <div class="card h-100 border-0 gift-voucher-gold-color">
                                 <div class="card-body d-flex flex-column justify-content-between p-4">
                                     <div class="p-md-2">
-                                        <h6 class="gift-voucher-card-category-tital1">Diamond</h6>
-                                        <h4 class="gift-voucher-card-category-tita2 mb-0">LKR 200,000</h4>
+                                        <h6 class="gift-voucher-card-category-tital1">Gold</h6>
+                                        <h4 class="gift-voucher-card-category-tita2 mb-0">LKR 100,000</h4>
         
                                         <span class="badge News-and-Events-badge mb-3">Viza / Master / Amex </span>
         
@@ -291,11 +280,11 @@
                         </div>
 
                         <div class="col">
-                            <div class="card h-100 border-0 gift-voucher-gold-color">
+                            <div class="card h-100 border-0 gift-voucher-diamond-color">
                                 <div class="card-body d-flex flex-column justify-content-between p-4">
                                     <div class="p-md-2">
-                                        <h6 class="gift-voucher-card-category-tital1">Gold</h6>
-                                        <h4 class="gift-voucher-card-category-tita2 mb-0">LKR 100,000</h4>
+                                        <h6 class="gift-voucher-card-category-tital1">Diamond</h6>
+                                        <h4 class="gift-voucher-card-category-tita2 mb-0">LKR 200,000</h4>
         
                                         <span class="badge News-and-Events-badge mb-3">Viza / Master / Amex </span>
         
@@ -326,8 +315,44 @@
                                 </div>
                             </div>
                         </div>
-
-                        
+                       
+                         <div class="col">
+                            <div class="card h-100 border-0 gift-voucher-diamond-plus-color">
+                                <div class="card-body d-flex flex-column justify-content-between p-4">
+                                    <div class="p-md-2">
+                                        <h6 class="gift-voucher-card-category-tital1">Diamond Plus</h6>
+                                        <h4 class="gift-voucher-card-category-tita2 mb-0">LKR 300,000</h4>
+        
+                                        <span class="badge News-and-Events-badge mb-3">Viza / Master / Amex </span>
+        
+                                        <h6 class="mb-4 gift-voucher-card-category-subtital">Book now and get 
+                                            "QK FASHION SHOW 2024" tickets and offers below</h6>
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex mb-2">
+                                                <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                                                    <img src="assets/images/News-and-Events/Type3.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <p class="gift-voucher-card-card-list-text mb-0">Unlimited Updates & Projects</p>
+                                            </li>
+        
+                                            <li class="d-flex mb-2">
+                                                <span class="bs-icon-xs bs-icon-rounded bs-icon-primary-light bs-icon me-2">
+                                                    <img src="assets/images/News-and-Events/Type3.svg" class="img-fluid" alt="">
+                                                </span>
+                                                <p class="gift-voucher-card-card-list-text mb-0">Custom Permissions</p>
+                                            </li>
+        
+                                            
+        
+                                        </ul>
+                                        <button type="button" class="btn btn-dark News-and-Events-card-buttion mb-0 mt-2" data-bs-toggle="modal" data-bs-target="#giftVoucherModal">Book
+                                            Now<i class="fa-solid  mb-0 fa-arrow-right ms-2"></i></button>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div> 
+                     
                     </div>
             </div>
         </div>
@@ -524,24 +549,18 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center Select-fabric-scrollbar">
-            <h3 class="gift-voucher-modal-tital1 mb-md-3 mb-4 pb-md-0 pb-2">You’re invited to celebrate the</h3>
-            <h3 class="gift-voucher-modal-tital2 mb-5">GRAND <br>
-                OPENING</h3>
+            <h3 class="gift-voucher-modal-tital1 mb-md-3 mb-4 pb-md-0 pb-2">You are invited to rejoice</h3>
+            <h3 class="gift-voucher-modal-tital2 mb-4">IMPRESSIVE INAUGURAL
             
-            <div>
-                <img src="assets/images/gift-voucher/Group167.svg" class="img-fluid" alt="">
-            </div>
             <h3 class="gift-voucher-modal-date py-4 my-2">04th January 2024 at 6.00 PM
-                LEVEL 20, MIREKA TOWER, 324 Havelock Rd, Colombo 05.</h3>
+                LEVEL 20, MIREKA TOWER, Havelock Rd, Colombo 05.</h3>
 
-            <h3 class="gift-voucher-modal-date">QK FASHION SHOW 2024 Starting at 7.00 PM</h3>
+            <h3 class="gift-voucher-modal-date">FASHION SHOW 2024 Starting at 8.00 PM</h3>
 
             <div class="mt-4 pt-2 d-flex justify-content-center">
                 <div>
-                <h3 class="gift-voucher-modal-tital3">RSVP</h3>
-                <h3 class="gift-voucher-modal-description mb-0">We have reserved 02 seats for you.
-                    We look forward to celebrating with you!
-                    Please confirm your seat</h3>
+                <h3 class="gift-voucher-modal-tital3">FASHION SHOW</h3>
+                <h3 class="gift-voucher-modal-description mb-0">We take kept 05 seats for you. We can't wait to rejoice with you! Please confirm your chair</h3>
             </div>
             </div>
             <div class="text-center my-4 mx-auto">
