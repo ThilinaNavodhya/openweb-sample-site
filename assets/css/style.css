@@ -2026,7 +2026,8 @@ a.new-item-hadder-text:hover {
 	 color: #000;
 }
  select.form-select.w-50.form-select-lg.mb-3 {
-	 border-color: #979797;
+	 border-color: #9e9e9e;
+	 background-color: #646464;
 }
  .Select-fabric-form-select-text {
 	 font-weight: 300;
@@ -2299,6 +2300,7 @@ a.new-item-hadder-text:hover {
 }
  .qtyminus-input {
 	 max-width: 25px;
+	 background-color: #646464;
 }
  .edit-jacket-size-option-btn {
 	 border-color: #979797;
