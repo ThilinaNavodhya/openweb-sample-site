@@ -3513,7 +3513,10 @@ a.new-item-hadder-text:hover {
 	 background-color: #e3b13e;
 }
  #ticketbookingbigcards .card.selected {
-	 border-color: #0a5197;
+	 background-color: #8d8d8d;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	 border: 0px;
+	 
 }
 /*11 Ticket Booking modal start ========================================================================== */
  .ticket-booking-modal-width {
