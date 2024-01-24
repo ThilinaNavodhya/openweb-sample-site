@@ -3533,22 +3533,7 @@ a.new-item-hadder-text:hover {
 }
 /*11 Gift Voucher banner end ========================================================================== */
 /*11 Gift Voucher card start ========================================================================== */
- .gift-voucher-diamond-plus-color {
-	 background-color: #d8d8d8;
-	 border-radius: 15px;
-}
- .gift-voucher-diamond-color {
-	 background-color: #fef4f8;
-	 border-radius: 15px;
-}
- .gift-voucher-platinum-color {
-	 background-color: #80b2cc;
-	 border-radius: 15px;
-}
- .gift-voucher-gold-color {
-	 background-color: #e3b13e;
-	 border-radius: 15px;
-}
+ 
  .gift-voucher-modal-buttion {
 	 background-color: #2d2e2c;
 	 color: #fff;
