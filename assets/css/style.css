@@ -2997,15 +2997,10 @@ a.new-item-hadder-text:hover {
 }
 /*News and Events banner end ========================================================================== */
 /*News and Events card ========================================================================== */
- .News-and-Events-card1-color {
+ .News-and-Events-card-color {
 	 background-color: #d8d8d8;
 }
- .News-and-Events-card2-color {
-	 background-color: #645948;
-}
- .News-and-Events-card3-color {
-	 background-color: #a78048;
-}
+ 
  .News-and-Events-badge {
 	 background-color: #90919c26;
 	 color: #161519;
