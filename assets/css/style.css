@@ -3496,21 +3496,12 @@ a.new-item-hadder-text:hover {
 	 background-color: #fff;
 	 width: 244px;
 }
- .Ticket-Bookingpaty-card-diamond-plus {
-	 border-radius: 4px;
-	 background-color: #ebebeb;
-}
- .Ticket-Bookingpaty-card-diamond {
-	 border-radius: 4px;
-	 background-color: #fef4f8;
-}
- .Ticket-Bookingpaty-card-platinum {
-	 border-radius: 4px;
-	 background-color: #80b2cc;
-}
- .Ticket-Bookingpaty-card-gold {
-	 border-radius: 4px;
-	 background-color: #e3b13e;
+ 
+
+
+.Ticket-Bookingpaty-card{
+	border-radius: 4px;
+	background-color: #ebebeb;
 }
  #ticketbookingbigcards .card.selected {
 	 background-color: #8d8d8d;
