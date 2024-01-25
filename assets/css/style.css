@@ -72,13 +72,7 @@
 	 line-height: 60px;
 	 text-transform: uppercase;
 }
- .choose-from-text {
-	 font-size: 44px;
-	 font-weight: 700;
-}
- .Choose-from-150 {
-	 font-size: 16.4px;
-}
+ 
  .ticket-booking-btn {
 	 font-size: 20px;
 	 font-weight: 500;
@@ -133,35 +127,22 @@
 	 font-size: 20px;
 	 font-weight: 500;
 }
- .tabe-underline {
-	 font-size: 16px;
-	 font-weight: 350;
-}
- .Select-fabric-header-text {
-	 font-size: 24px;
-}
- .Select-fabric-buttons {
-	 font-size: 18px;
-	 font-weight: 300;
-	 border-color: #979797;
-	 color: #000000D9;
-}
 
-.btn.Select-fabric-buttons:hover {
-	background-color: #eee;
-	color: #000000D9;
-	border-color: #979797;
-}
-.btn.Select-fabric-buttons:active {
-	background-color: #c7c7c7;
-	color: #000000D9;
-	border-color: #979797;
-}
 
- .fabric-select-text {
-	 font-size: 16px;
-	 font-weight: 300;
-}
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
  .new-arraivals-hadder {
 	 font-size: 27px;
 	 font-weight: 400;
@@ -227,10 +208,7 @@ a.new-item-hadder-text:hover {
 	 font-size: 24px;
 	 font-weight: 800;
 }
- .Ready-made-Product-owl-carousel-text {
-	 font-size: 24px;
-	 font-weight: 800;
-}
+ 
  .Ready-made-offcanvas-text {
 	 font-size: 20px;
 	 font-weight: 500;
@@ -374,18 +352,7 @@ a.new-item-hadder-text:hover {
 	 color: #FFFFFFBF;
 	 font-family: "SF Pro Display";
 }
- .recent-news-events-Subtitle {
-	 font-size: 14.6px;
-	 font-weight: 500;
-	 color: #161519;
-	 font-family: 'SF Pro Display';
-}
- .recent-news-events-Header {
-	 font-size: 38px;
-	 font-weight: 700;
-	 color: #161519;
-	 font-family: 'DM Sans', sans-serif;
-}
+ 
  .recent-news-events-cards-Postedby {
 	 font-size: 15.6px;
 	 font-weight: 400;
@@ -521,11 +488,21 @@ a.new-item-hadder-text:hover {
 	 font-weight: 800;
 	 color: #1e1e1e;
 }
- .ticket-booking-bigcard-subtital {
-	 font-size: 16px;
-	 font-weight: 800;
-	 color: #1e1e1e;
-}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  .ticket-booking-smallcard-tital {
 	 font-size: 24px;
 	 font-weight: 800;
@@ -656,29 +633,10 @@ a.new-item-hadder-text:hover {
 	 font-weight: 500;
 	 color: #1e1e1e;
 }
- .calculator-size-passport-tital {
-	 font-size: 24px;
-	 font-weight: 500;
-	 color: #000 D9;
-}
- .calculator-size-passport-subtital {
-	 font-size: 16px;
-	 font-weight: 300;
-	 color: #000 D9;
-}
- .calculator-card-size-passport-tital {
-	 font-size: 24px;
-	 font-weight: 800;
-	 color: #000000D9;
-}
- .calculator-card-size-passport-tital:hover {
-	 color: #000000D9;
-}
- .calculator-card-size-passport-subtital {
-	 font-size: 16px;
-	 font-weight: 300;
-	 color: #000000D9;
-}
+ 
+ 
+ 
+ 
  .ticket-booking-map-tital {
 	 font-size: 36px;
 	 font-weight: 800;
@@ -694,11 +652,7 @@ a.new-item-hadder-text:hover {
 	 font-weight: 800;
 	 color: #000;
 }
- .ticket-booking-modal-tital2 {
-	 font-size: 26px;
-	 font-weight: 400;
-	 color: #1e1e1e;
-}
+ 
  .ticket-booking-modal-subtital {
 	 font-size: 16px;
 	 font-weight: 350;
@@ -709,40 +663,11 @@ a.new-item-hadder-text:hover {
 	 font-weight: 500;
 	 color: #fff;
 }
- a.size-cal-in-store-card-tital {
-	 font-size: 24px;
-	 font-weight: 800;
-	 color: #000000D9;
-}
- a.size-cal-in-store-card-tital:hover {
-	 font-size: 24px;
-	 font-weight: 800;
-	 color: #000000D9;
-}
- .size-cal-in-store-card-subtital {
-	 font-size: 16px;
-	 font-weight: 300;
-	 color: #000000D9;
-}
- .size-cal-in-store-card-time {
-	 font-size: 12px;
-	 font-weight: 300;
-	 color: #000000D9;
-}
- .add-size-adjustment-tital {
-	 font-size: 24px;
-	 font-weight: 500;
-}
- a.add-size-adjustment-card-tital {
-	 font-size: 20px;
-	 font-weight: 350;
-	 color: #000;
-}
- a.add-size-adjustment-card-tital:hover {
-	 font-size: 20px;
-	 font-weight: 350;
-	 color: #000;
-}
+ 
+ 
+ 
+ 
+ 
  .newarrivals-offcanvas-accordion-tital {
 	 font-size: 18px;
 	 font-weight: 500;
@@ -751,60 +676,16 @@ a.new-item-hadder-text:hover {
 	 font-size: 27px;
 	 font-weight: 500;
 }
- .choose-date-and-time-tital {
-	 font-size: 24px;
-	 font-weight: 500;
-	 color: #000;
-}
- .choose-date-and-time-subtital {
-	 font-size: 20px;
-	 font-weight: 500;
-	 color: #000 A3;
-}
- .choose-date-and-time-image-tital {
-	 font-size: 20px;
-	 font-weight: 500;
-	 color: #000;
-}
- a.choose-date-and-time-card-tital {
-	 font-size: 18px;
-	 font-weight: 350;
-	 color: #000 D9;
-}
- a.choose-date-and-time-card-tital:hover {
-	 font-size: 18px;
-	 font-weight: 350;
-	 color: #000 D9;
-}
- .choose-date-and-time-card-subtital {
-	 font-size: 16px;
-	 font-weight: 300;
-	 color: #000 D9;
-}
- .share-details-about-you-tital {
-	 font-size: 24px;
-	 font-weight: 500;
-}
- .details-about-check-box-text {
-	 font-size: 18px;
-	 font-weight: 350;
-	 color: #1e1e1e;
-}
- .summary-tab-tital {
-	 font-size: 24px;
-	 font-weight: 500;
-	 color: #000;
-}
- .summary-tab-subtital {
-	 font-size: 16px;
-	 font-weight: 350;
-	 color: #000;
-}
- .summary-tab-category-list {
-	 font-size: 20px;
-	 font-weight: 500;
-	 color: #000;
-}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  .gift-voucher-card-category-tital1 {
 	 font-size: 20px;
 	 font-weight: 700;
@@ -883,39 +764,7 @@ a.new-item-hadder-text:hover {
 	 font-weight: 400;
 	 color: #000;
 }
- .thank-you-tital-text {
-	 font-family: 'SF Pro Display';
-	 font-weight: 400;
-	 font-size: 32px;
-	 color: #161519;
-}
- .thank-you-tital-price {
-	 font-weight: 400;
-	 font-size: 24px;
-	 color: #161519;
-}
- .thank-you-for-shopping-text {
-	 font-family: 'SF Pro Display';
-	 font-weight: 700;
-	 font-size: 24px;
-	 line-height: 35.5px;
-	 color: #161519;
-}
- .thank-you-for-shopping-text2 {
-	 font-family: 'SF Pro Display';
-	 font-weight: 700;
-	 font-size: 24px;
-	 line-height: 35.5px;
-	 color: #2e77bc;
-}
- .thank-you-for-shopping-text3 {
-	 font-family: 'SF Pro Display';
-	 font-weight: 300;
-	 font-size: 20px;
-	 font-style: italic;
-	 line-height: 25.4px;
-	 color: #1e1e1e;
-}
+ 
 
 .about-us-accordion-title{
 	font-size: 16.8px;
@@ -935,32 +784,7 @@ a.new-item-hadder-text:hover {
 	font-family: 'SF Pro Display';
 }
 
-.appointment-calendar-tital{
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 32.78px;
-}
 
-.appointment-calendar-subtital{
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 32.78px;
-}
-
-.appointment-calendar-description{
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 32.78px;
-}
-
-.appointment-calendar-confrtmation-tital{
-	font-weight: 800;
-	font-size: 48px;
-}
-.appointment-calendar-confrtmation-list{
-	font-weight: 300;
-	font-size: 20px;
-}
  @media (max-width: 820px) {
 	 .cover-head-Catalogue-text {
 		 font-size: 26px;
@@ -977,12 +801,9 @@ a.new-item-hadder-text:hover {
     line-height: 30px;
     text-transform: uppercase;
 	}
-	 .choose-from-text {
-		 font-size: 26px;
-	}
-	 .Choose-from-150 {
-		 font-size: 16.4px;
-	}
+	 
+
+	 
 	 .fashion-show-header {
 		 font-size: 26px;
 	}
@@ -1002,17 +823,9 @@ a.new-item-hadder-text:hover {
 		 font-size: 16px;
 		 font-weight: 350;
 	}
-	 .Select-fabric-header-text {
-		 font-size: 24px;
-	}
-	 .Select-fabric-buttons {
-		 font-size: 18px;
-		 font-weight: 300;
-	}
-	 .fabric-select-text {
-		 font-size: 16px;
-		 font-weight: 300;
-	}
+	 
+	 
+	 
 	 .new-arraivals-hadder {
 		 font-size: 27px;
 		 font-weight: 350;
@@ -1028,12 +841,6 @@ a.new-item-hadder-text:hover {
 	}
 	 .News-and-Events-card-price {
 		 font-size: 36px;
-	}
-	 .recent-news-events-Header {
-		 font-size: 28px;
-		 font-weight: 700;
-		 color: #161519;
-		 font-family: 'DM Sans', sans-serif;
 	}
 	 .Contact-us-Careers-mobile-app-tital {
 		 font-size: 26px;
@@ -1117,11 +924,7 @@ a.new-item-hadder-text:hover {
 		 font-weight: 800;
 		 color: #1e1e1e;
 	}
-	 .ticket-booking-bigcard-subtital {
-		 font-size: 16px;
-		 font-weight: 800;
-		 color: #1e1e1e;
-	}
+	 
 	 .ticket-booking-smallcard-tital {
 		 font-size: 24px;
 		 font-weight: 800;
@@ -1201,10 +1004,7 @@ a.new-item-hadder-text:hover {
 		font-weight: 400;
 		color: #000;
    }
-   .appointment-calendar-confrtmation-tital{
-	font-weight: 800;
-	font-size: 36px;
-}
+  
 }
  @media (max-width: 425px) {
 	 .cover-head-Catalogue-text {
@@ -1216,12 +1016,8 @@ a.new-item-hadder-text:hover {
 	 .Design-your-own-Custom {
 		 font-size: 14.6px;
 	}
-	 .choose-from-text {
-		 font-size: 26px;
-	}
-	 .Choose-from-150 {
-		 font-size: 16.4px;
-	}
+	
+	 
 	 .nearest-store {
 		 font-size: 20px;
 	}
@@ -1351,11 +1147,6 @@ a.new-item-hadder-text:hover {
 	}
 	 .ticket-booking-bigcard-tital {
 		 font-size: 16px;
-		 font-weight: 800;
-		 color: #1e1e1e;
-	}
-	 .ticket-booking-bigcard-subtital {
-		 font-size: 14px;
 		 font-weight: 800;
 		 color: #1e1e1e;
 	}
@@ -1508,13 +1299,8 @@ a.new-item-hadder-text:hover {
 		 font-weight: 400;
 		 color: #000;
 	}
-	 .Select-fabric-header-text {
-		 font-size: 20px;
-	}
-	 .Select-fabric-buttons {
-		 font-size: 14px;
-		 font-weight: 300;
-	}
+	 
+	 
 	 .ticket-booking-modal-footer-text {
 		 font-size: 15px;
 		 font-weight: 500;
@@ -1526,30 +1312,7 @@ a.new-item-hadder-text:hover {
 		 font-size: 28px;
 		 color: #161519;
 	}
-	 .thank-you-for-shopping-text {
-		 font-family: "SF Pro Display";
-		 font-weight: 700;
-		 font-size: 18px;
-		 line-height: 35.5px;
-		 color: #161519;
-	}
-	 .thank-you-for-shopping-text2 {
-		 font-family: "SF Pro Display";
-		 font-weight: 700;
-		 font-size: 18px;
-		 line-height: 35.5px;
-		 color: #2e77bc;
-	}
-
-	.appointment-calendar-confrtmation-tital{
-		font-weight: 800;
-		font-size: 24px;
-	}
-
-	.appointment-calendar-confrtmation-list {
-		font-weight: 300;
-		font-size: 16px;
-	}
+	
 }
  a {
 	 text-decoration: none;
@@ -2543,7 +2306,7 @@ a.new-item-hadder-text:hover {
 }
  @media (max-width: 425px) {
 	 .myImage {
-		 background-image: url('/assets/images/News-and-Events06268b10ac8a5e6fb2d587c783f8e096.jpg');
+		 background-image: url('/assets/images/News-and-Events/06268b10ac8a5e6fb2d587c783f8e096.jpg');
 		 background-repeat: no-repeat;
 		 background-size: cover;
 	}
