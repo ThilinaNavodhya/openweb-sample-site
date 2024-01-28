@@ -42,25 +42,21 @@
 	 src: url('/assets/font/avenirnext/AvenirNext-UltraLight-11.ttf') format('truetype');
 	 src: url('/assets/font/avenirnext/AvenirNext-UltraLightItalic-12.ttf') format('truetype');
 }
- .fashion-show-header {
-	 font-size: 36px;
-	 font-weight: 800;
-	 font-family: 'Avenir Book';
-}
+ 
  .accordion-button:focus {
 	 box-shadow: none;
 }
  .navbar-offcanvas {
 	 font-size: 18px;
-	 font-weight: 400;
+	 font-weight: 500;
 }
  .cover-head-Catalogue-text {
 	 font-size: 36px;
-	 font-weight: 500;
+	 font-weight: 600;
 }
  .cover-head-image-text {
 	 font-size: 18px;
-	 font-weight: 800;
+	 font-weight: 500;
 }
  .Design-your-own-Custom {
 	 font-size: 14.6px;
@@ -78,9 +74,9 @@
 	 font-weight: 500;
 }
  .fashion-show-header {
-	 font-size: 36px;
-	 font-weight: 800;
-	 font-family: 'Avenir Book';
+	 font-size: 42px;
+	 font-weight: 900;
+	 font-family: 'Playfair Display', serif;
 }
  .fashion-show-description {
 	 font-size: 24px;
@@ -89,32 +85,32 @@
 }
  .nearest-store {
 	 font-size: 35px;
-	 font-weight: 300;
+	 font-weight: 600;
 	 font-family: 'Avenir Book';
 }
  .nearest-store2 {
 	 font-size: 20px;
-	 font-weight: 300;
+	 font-weight: 500;
 	 font-family: 'Avenir Book';
 }
 
 .nearest-store3 {
 	 font-size: 20px;
-	 font-weight: 500;
+	 font-weight: 600;
 	 font-family: 'Avenir Book';
 }
  .Get-the-latest {
 	 font-size: 35px;
-	 font-weight: 300;
+	 font-weight: 500;
 	 font-family: 'Avenir Book';
 }
  .footer-header {
 	 font-size: 18px;
-	 font-weight: 500;
+	 font-weight: 600;
 }
  .footer-list {
 	 font-size: 16px;
-	 font-weight: 300;
+	 font-weight: 600;
 	 color: #ffffffb7;
 	 font-family: 'Avenir Book';
 }
@@ -122,6 +118,7 @@
 	 font-size: 14px;
 	 font-family: 'Avenir Book';
      color: #ffffffb7;
+	 font-weight: 600;
 }
  a.change-of-direction {
 	 font-size: 20px;
@@ -129,49 +126,35 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
- 
- 
-
- 
  .new-arraivals-hadder {
 	 font-size: 27px;
-	 font-weight: 400;
+	 font-weight: 600;
 }
  .new-arraivals-description {
 	 max-width: 550px;
 	 font-size: 18px;
-	 font-weight: 400;
+	 font-weight: 500;
 }
 
 .new-item-hadder-text {
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 600;
    color: #000000;
 }
  a.new-item-hadder-text {
 	 font-size: 18px;
-	 font-weight: 300;
+	 font-weight: 600;
     color: #000000;
 }
 
 .new-item-hadder-text-price {
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 600;
    color: #000000;
 }
 a.new-item-hadder-text:hover {
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 600;
 	color: #000000;
 }
 
@@ -595,13 +578,13 @@ a.new-item-hadder-text:hover {
 }
  .gift-voucher-pagetwo-subtital3 {
 	 font-size: 16px;
-	 font-weight: 400;
-	 color: #d90a2c;
+	 font-weight: 500;
+	 color: #590ad9;
 }
  .gift-voucher-pagetwo-subtital4 {
 	 font-size: 16px;
-	 font-weight: 800;
-	 color: #d90a2c;
+	 font-weight: 900;
+	 color: #590ad9;
 }
  .gift-voucher-accordion-tital {
 	 font-size: 48px;
@@ -707,7 +690,7 @@ a.new-item-hadder-text:hover {
 }
  .gift-voucher-card-card-list-text {
 	 font-size: 14px;
-	 font-weight: 400;
+	 font-weight: 600;
 	 color: #161519;
 	 font-family: "SF Pro Display";
 	 line-height: 23.5px;
@@ -722,7 +705,7 @@ a.new-item-hadder-text:hover {
 }
  .gift-voucher-modal-tital2 {
 	 font-size: 48px;
-	 font-weight: 400;
+	 font-weight: 600;
 	 color: #000;
 	 font-family: 'Bellefair', serif;
 	 line-height: 38.85px;
@@ -736,7 +719,7 @@ a.new-item-hadder-text:hover {
 }
  .gift-voucher-modal-tital3 {
 	 font-size: 32px;
-	 font-weight: 400;
+	 font-weight: 600;
 	 color: #000;
 	 font-family: 'Amiri', serif;
 }
@@ -976,7 +959,7 @@ a.new-item-hadder-text:hover {
 	}
 	 .gift-voucher-card-card-list-text {
 		 font-size: 14px;
-		 font-weight: 400;
+		 font-weight: 600;
 		 color: #161519;
 		 font-family: "SF Pro Display";
 		 line-height: 23.5px;
@@ -1242,7 +1225,7 @@ a.new-item-hadder-text:hover {
 	}
 	 .gift-voucher-card-card-list-text {
 		 font-size: 14px;
-		 font-weight: 400;
+		 font-weight: 600;
 		 color: #161519;
 		 font-family: "SF Pro Display";
 		 line-height: 23.5px;
@@ -1257,7 +1240,7 @@ a.new-item-hadder-text:hover {
 	}
 	 .gift-voucher-modal-tital2 {
 		 font-size: 36px;
-		 font-weight: 400;
+		 font-weight: 600;
 		 color: #000;
 		 font-family: 'Bellefair', serif;
 		 line-height: 38.85px;
@@ -2270,7 +2253,7 @@ a.new-item-hadder-text:hover {
 }
  
  .News-and-Events-badge {
-	 background-color: #90919c26;
+	 background-color: #ad54e063;
 	 color: #161519;
 	 font-weight: 500;
 	 font-family: 'SF Pro Display';
@@ -2817,14 +2800,20 @@ a.new-item-hadder-text:hover {
  .footer-Contact {
 	 max-width: 250px;
 }
+#footer .accordion-button {
+	
+	font-weight: 600;
+}
  #footer .accordion-button:not(.collapsed) {
 	 box-shadow: none;
 	 background-color: #353535;
+	 font-weight: 600;
 }
  #footer .accordion-button:focus {
 	 border-color: none;
 	 outline: 0;
 	 box-shadow: none;
+	 font-weight: 600;
 }
  .custom-select::after {
 	 border-color: #f00;
