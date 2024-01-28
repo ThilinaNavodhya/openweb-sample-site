@@ -1344,6 +1344,13 @@ a.new-item-hadder-text:hover {
 	 scrollbar-width: none;
 	/* Firefox */
 }
+
+.form-select:focus {
+	outline: none; /* Remove the default outline */
+	box-shadow: none; /* Remove the default box shadow */
+	border-color: initial; /* Set the border color to the initial value */
+}
+
 /* 2. navbar section styles ========================================================================== */
  #navbar1.scrolled {
 	 background-color: #fff;
@@ -1587,14 +1594,7 @@ a.new-item-hadder-text:hover {
  .fabrice-header {
 	 max-width: 267px;
 }
- .choose-from-mobile {
-	 background-color: #0c1c28F5;
-	 color: #fff;
-	 position: relative;
-	 margin-top: 11%;
-	 width: 220px;
-	 padding: 22px 12px 15px 22px;
-}
+ 
 /* 5. The change of direction cardes ========================================================================== */
  .direction-cardes-1 {
 	 max-width: 24%;
@@ -2035,23 +2035,7 @@ a.new-item-hadder-text:hover {
 		 --bs-offcanvas-width: 100%;
 	}
 }
- .Ready-Product-offcanvas-btn1 {
-	 width: 100%;
-	 border-color: #979797;
-	 background-color: #fff;
-	 font-size: 14px;
-}
- .Ready-Product-offcanvas-btn1:hover {
-	 width: 100%;
-	 border-color: #979797;
-	 background-color: #e0e0e0;
-}
-
-.btn.Ready-Product-offcanvas-btn1:active {
-	width: 100%;
-	border-color: #979797;
-	background-color: #c7c7c7;
-}
+ 
 
  .Ready-Product-offcanvas-btn2 {
 	 width: 100%;
@@ -2306,7 +2290,7 @@ a.new-item-hadder-text:hover {
 	 font-weight: 600;
 }
 /*News and Events card ========================================================================== */
-/*WORK INQUIRIES ========================================================================== */
+
  .myImage {
 	 background-image: url('/assets/images/News-and-Events/06268b10ac8a5e6fb2d587c783f8e096.jpg');
 	 background-attachment: local;
@@ -2326,7 +2310,7 @@ a.new-item-hadder-text:hover {
 	 height: 42px;
 	 background-color: #191f23;
 }
-/*WORK INQUIRIES end ========================================================================== */
+
 /*Recent news & EVENTS ========================================================================== */
  .Recent-news-and-events-buttion {
 	 font-family: 'DM Sans', sans-serif;
@@ -2570,15 +2554,8 @@ a.new-item-hadder-text:hover {
 	}
 }
 /*About us Testimonials end ========================================================================== */
-/*About us video ========================================================================== */
- .aboutus-video-btn {
-	 margin: 0;
-	 position: absolute;
-	 top: 50%;
-	 left: 50%;
-	 -ms-transform: translate(-50%, -50%);
-	 transform: translate(-50%, -50%);
-}
+
+ 
 /*11. Contact us banner ========================================================================== */
  .Contact-us-banner-icon {
 	 margin: 0;
@@ -2669,43 +2646,7 @@ a.new-item-hadder-text:hover {
 	 border-color: #979797;
 }
 /*11. Contact us form end ========================================================================== */
-/*11. Contact Careers banner end ========================================================================== */
-/*11. Contact Careers banner end ========================================================================== */
-/*11. Contact Careers Careers mobile app ========================================================================== */
- .Contact-us-Careers-mobile-app-btn {
-	 max-width: 63%;
-	 height: 42px;
-	 background-color: #111013;
-}
-/*11. Contact Careers Careers mobile end ========================================================================== */
- .Get-rewarded-banner-image {
-	 background-image: url(/assets/images/Contact-us/Column.png);
-	 background-attachment: local;
-	 background-position: center;
-	 background-repeat: no-repeat;
-	 background-size: cover;
-}
- @media (max-width: 1192px) {
-	 .Get-rewarded-banner-image-mq .Get-rewarded-banner-width {
-		 max-width: 100%;
-	}
-}
- @media (max-width: 820px) {
-	 .Get-rewarded-banner-image-mq .Get-rewarded-banner-image {
-		 background-image: url(/assets/images/Contact-us/PromoBanner.png);
-		 background-attachment: local;
-		 background-position: center;
-		 background-repeat: no-repeat;
-		 background-size: cover;
-	}
-	 .Get-rewarded-banner-image-mq .Get-rewarded-banner-width {
-		 max-width: 100%;
-	}
-}
- .Get-rewarded-banner-width {
-	 max-width: 40%;
-}
-/*11. Contact Careers Careers mobile end ========================================================================== */
+
 /*11 Ticket Booking banner ========================================================================== */
  .Contact-Careers-banner-btn {
 	 height: 50px;
@@ -2776,8 +2717,17 @@ a.new-item-hadder-text:hover {
 	 width: 244px;
 }
  
+@media (max-width: 489px) {
+	.Ticket-Bookingpatycard-btn {
+		width: 135px;
+   }
+}
 
-
+@media (max-width: 353px) {
+	.Ticket-Bookingpatycard-btn {
+		width: 100px;
+   }
+}
 .Ticket-Bookingpaty-card{
 	border-radius: 4px;
 	background-color: #ebebeb;
@@ -2793,10 +2743,7 @@ a.new-item-hadder-text:hover {
 	 max-width: 500px;
 }
 /*11 Gift Voucher banner start ========================================================================== */
- .gift-voucher-banner {
-	 max-width: 34px;
-	 line-height: 74.98px;
-}
+ 
  .gift-voucher-btn {
 	 background-color: #2d2e2c;
 	 border-radius: 4px;
@@ -2858,137 +2805,14 @@ a.new-item-hadder-text:hover {
 /*11 Gift Voucher accordion end ========================================================================== */
 /* Appointment calendar page start */
 
-#appointmentcalendaform input.form-control {
-	background-color: #fff;
-	border-style: solid;
-	border: 1px solid #1e1e1e7A;
-	height: 50px;
-}
-#appointmentcalendaform .form-check-input[type=radio] {
-	border: 1px solid #000;
-}
-#appointmentcalendaform .form-check-input:checked {
-	background-color: #000;
-	border-color: #000;
-	border: 0px solid #000;
-}
 
 
-#appointmentcalendaform .form-select {
-	border: 1px solid #1e1e1e7A;
-	height: 50px; 
-}
-
-#appointmentcalendaform .form-select:checked {
-	border: none;
-	height: 50px; 	
-}
-
-.form-select:focus {
-	outline: none; /* Remove the default outline */
-	box-shadow: none; /* Remove the default box shadow */
-	border-color: initial; /* Set the border color to the initial value */
-}
 
 
-#appointmentcalendaform textarea.form-control {
-    min-height: calc(1.5em + 0.75rem + calc(var(--bs-border-width) * 2));
-	border: 1px solid #1e1e1e7A
-}
 
 
-.appointment-calenda-btn {
-	border-color: #979797;
-	font-size: 18px;
-	font-weight: 300;
-	color: #000000;
-}
-.appointment-calenda-btn:hover {
-	background-color: #ffffff;
-	border-color: #979797;
-}
-.appointment-calenda-btn:focus {
-	background-color: #D8D8D8;
-	color: #000000;
-	border-color: #D8D8D8;
-}
-/* .size-cal-select-size-card-btn {
-	border-color: #979797;
-	font-size: 18px;
-	font-weight: 300;
-	color: #000 D9;
-} */
 
-#appointmentcalendacards .card.selected {
-	background-color: #D8D8D8;
-}
 
-.appointment-calendar-description-border{
-	border-top: 1px solid #979797;
-	border-bottom: 1px solid #979797;
-}
-
-.btn.appointment-calendar-buttion{
-	background-color: #2D2E2C;
-	font-size: 14px;
-	font-weight: 350;
-	color: #FFFFFF;
-	width: 286px;
-	height: 47px;
-	border-radius: 4px;
-}
-
-.btn.appointment-calendar-buttion:hover{
-	background-color: #525351;
-	font-size: 14px;
-	font-weight: 350;
-	color: #FFFFFF;
-	border-radius: 4px;
-}
-
-.btn.appointment-confrtmation-buttion{
-	background-color: #2D2E2C;
-	font-size: 14px;
-	font-weight: 350;
-	color: #FFFFFF;
-	width: 230px;
-	height: 47px;
-	border-radius: 4px;
-}
-
-.btn.appointment-confrtmation-buttion:hover{
-	background-color: #525351;
-	font-size: 14px;
-	font-weight: 350;
-	color: #FFFFFF;
-	border-radius: 4px;
-	
-}
-
-#appointmentConfrtmation .form-check-input {
-    border-radius: 2px;
-    border-color: #000;
-}
-
-#appointmentConfrtmation .form-check-input:checked {
-    border-radius: 2px;
-    background-color: #000;
-    border-color: #000;
-}
-
-@media (max-width: 768px) {
-	.appointment-confrtmation-buttion-mq .appointment-confrtmation-buttion {
-		width: 377px;
-		
-   }
-}
-
-@media (max-width: 425px) {
-	.appointment-confrtmation-buttion-mq .appointment-confrtmation-buttion {
-		width: 268px;
-		
-   }
-}
 /*11. footer ========================================================================== */
  .footer-Contact {
 	 max-width: 250px;
