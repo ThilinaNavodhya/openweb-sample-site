@@ -1733,6 +1733,11 @@ a.new-item-hadder-text:hover {
  #newarrivalsaccordion .accordion-button:not(.collapsed) {
 	 background-color: #fff;
 }
+
+#newarrivalsaccordion .form-check-input{
+	border: solid #000000 1px;
+}
+
  #newarrivalsaccordion .form-check-input:checked {
 	 background-color: #121212;
 	 border-color: #121212;
